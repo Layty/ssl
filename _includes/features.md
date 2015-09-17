@@ -1,3 +1,7 @@
+---
+title:  "Features"
+date:   2015-09-16 13:00:00
+---
 ## Features
 + < 50KB total footprint with crypto provider
 + SSL 3.0 and TLS 1.0, 1.1 and 1.2 server and client support
