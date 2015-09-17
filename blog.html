@@ -16,11 +16,11 @@ permalink: /blog/
                 <a href="{{ post.url | prepend: site.baseurl }}">
                     <img class="img-responsive" src="{{ "/assets/img/blog/" | prepend: site.baseurl }}{{ post.img }}">
                 </a>    
-{% elseif post.categories.second == "releases" %}
+{% elsif post.categories.second == "releases" %}
                 <a href="{{ post.url | prepend: site.baseurl }}">
 				<i class="fa fa-file-archive-o"></i>
                 </a> 
-{% elseif post.categories.second == "news" %}
+{% elsif post.categories.second == "news" %}
                 <a href="{{ post.url | prepend: site.baseurl }}">
 				<i class="fa fa-newspaper-o"></i>
                 </a> 
