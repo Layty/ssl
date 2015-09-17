@@ -300,7 +300,7 @@ a:focus {
 /* Testimonials Wrap */
 #twrapback {
     background-color: {{ site.colors.primary }};
-    background-color:rgba({{ site.colors.primary_rgb }},.8);
+    background-color:rgba({{ site.colors.primary_rgb }},.5);
     position: absolute;
     top: 0;
     left: 0;
