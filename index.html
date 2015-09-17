@@ -30,9 +30,9 @@ permalink: /
 </div><! --/service -->
 
 {% include header2.html %}
-<div markdown="1">
-{% include features.md %}
-</div>
+
+{% capture my-include %}{% include features.md %}{% endcapture %}
+{{ my-include | markdownify }}
 
 <div class="container mtb">
     <div class="row">
