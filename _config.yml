@@ -28,20 +28,11 @@ colors:  #in hex code if not noted else
 social:
   - title: github
     url: https://github.com/matrixssl/matrixssl
-  - title: facebook
-    url:
-  - title: twitter
-    url: 
-  - title: instagram
-    url: 
-  - title: tumblr
-    url: 
     
 # Postal address (add as many lines as necessary). Shown in footer and on Contact page.
 address:
   - lines: 
-    - Seattle, WA,
-    - United States.
+    - Seattle Washington United States.
 email: support@matrixssl.org
 tel:
 
