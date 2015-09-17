@@ -2,26 +2,27 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-4">
-				<i class="fa fa-info-circle"></i>
                 <h4>About</h4>
                 <div class="hline-w"></div>
-                <p>{{ site.about }}</p>
+                <p>
+				<i class="fa fa-info-circle"></i>
+				{{ site.about }}</p>
             </div>
             <div class="col-lg-4">
-				<i class="fa fa-external-link"></i>
                 <h4>Links</h4>
                 <div class="hline-w"></div>
                 <p>
+					<i class="fa fa-external-link"></i>
                     {% for network in site.social %}
                         <a href="{{ network.url }}" class="btn-social btn-outline"><i class="fa fa-{{ network.title }}"></i></a>
                     {% endfor %}
                 </p>
             </div>
             <div class="col-lg-4">
-				<i class="fa fa-globe"></i>
                 <h4>Location</h4>
                 <div class="hline-w"></div>
                 <p>
+					<i class="fa fa-globe"></i>
                     {% for line in site.address.first.lines %}
                         {{ line }} <br>
                     {% endfor %}
