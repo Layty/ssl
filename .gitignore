@@ -1,0 +1,8 @@
+# Ignore tmp files
+*.swp
+*.old
+*.bk
+*.bak
+*.tmp
+*.orig
+*.DS_Store
