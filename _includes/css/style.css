@@ -237,6 +237,19 @@ a:focus {
 	margin: 0 auto;
 }
 
+#header2wrap {
+	background-color: {{ site.colors.secondary }};
+	min-height: 0px;
+	padding-top: 100px;
+	padding-bottom: 50px;
+	text-align: center;
+}
+
+#header2wrap .img-responsive {
+	margin: 0 auto;
+}
+
+
 /* Services Wrap */
 #service {
 	margin-top: 0px;
