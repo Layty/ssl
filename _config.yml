@@ -6,6 +6,7 @@ description: "MatrixSSL is an open embedded SSL and TLS implementation designed 
 analytics: "UA-251332-4"
 baseurl: "" #important: start with /
 url: "https://matrixssl.github.io"
+copyright: "Copyright (c) INSIDE Secure Corp., 2002-2015.  All Rights Reserved."
 
 # Build settings
 markdown: kramdown
@@ -13,9 +14,12 @@ permalink: /:categories/:title
 excerpt_separator: <!--more--> #use this in posts to define how long the excerpt of the post (that is shown on the Blog page) is
 
 colors:  #in hex code if not noted else
-  primary: "#00b3fe" #"#F70031" 
-  primary_rgb: "0,179,254" #"247,0,49" #rgb of the primary. Needed in some places for the transparency effect.  
-  secondary: "#384452" #"#33004D"
+  primary: "#456785"
+  primary_rgb: "69,102,133"
+#  primary: "#00b3fe" #"#F70031" 
+#  primary_rgb: "0,179,254" #"247,0,49" #rgb of the primary. Needed in some places for the transparency effect.  
+  secondary: "#c35f2d"
+#  secondary: "#384452" #"#33004D"
   link: "#428bca"
   link_hover: "#01b2fe"
   footer_heading: "#ffffff"
@@ -35,7 +39,6 @@ address:
     - Seattle Washington United States.
 email: support@matrixssl.org
 tel:
-
 
 ### GENERAL DATA FOR VARIOUS LOCATIONS ###
     
@@ -94,6 +97,7 @@ about: "MatrixSSL&trade; is an embedded SSL and TLS implementation designed for 
 
 # Testimonial content. Shown on Home and About page. 
 testimonial:
-    message: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
-    author: Marcel Newman
-    position: WEB DESIGNER - BLACKTIE.CO
+    message: "
+Ice patterns formed and reformed on the screen as he probed for gaps, skirted the most obvious traps, and mapped the route he'd take through Sense/Net's ice. It was good ice. Wonderful ice... Case searched the matrix around the Tessier-Ashpool ice until he found the pink structure, a standard commercial unit, and punched in closer to it... 'Boy, that is one mean piece of software. Hottest thing since sliced bread. That thing's invisible. I just now rented twenty seconds on that little pink box, four jumps left of the Tessier-Ashpool ice; had a look at what we look like. We don't. We're not there.' "
+    author: William Gibson
+    position: Neuromancer
