@@ -121,8 +121,12 @@ a:focus {
 	font-weight: 900;
 }
 
-.navbar-brand.shrink img {
-	max-height: 50%;
+.navbar img {
+	height: 100%;
+}
+
+.navbar.shrink img {
+	height: 50%;
 }
 
 .navbar-header .navbar-brand {
@@ -402,6 +406,7 @@ a:focus {
 
 #footerwrap small {
 	color: {{ site.colors.footer_content }};
+	align: center;
 	text-align: center;
 }
 
