@@ -121,7 +121,7 @@ a:focus {
 	font-weight: 900;
 }
 
-.navbar-brand-shrink > img {
+.navbar-brand.shrink img {
 	max-height: 50%;
 }
 
@@ -398,6 +398,11 @@ a:focus {
 
 #footerwrap h4 {
 	color: {{ site.colors.footer_heading }};
+}
+
+#footerwrap small {
+	color: {{ site.colors.footer_content }};
+	text-align: center;
 }
 
 #footerwrap i {
