@@ -121,6 +121,10 @@ a:focus {
 	font-weight: 900;
 }
 
+.navbar-brand-shrink > img {
+	height: 0.5;
+}
+
 .navbar-header .navbar-brand {
 	color: white;
 }
