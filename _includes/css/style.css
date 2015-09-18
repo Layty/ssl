@@ -100,6 +100,19 @@ a:focus {
 	min-height: 70px;
 	padding-top: 10px;
 	margin-bottom: 0px;
+
+	-webkit-transition: all .4s ease;
+	-moz-transition: all .4s ease;
+	-o-transition: all .4s ease;
+	-ms-transition: all .4s ease;
+	transition: all .4s ease;
+}
+
+.navbar.shrink {
+	min-height: 50px;
+	padding-top: 10px;
+	margin-bottom: 0px;
+	background-color: {{ site.colors.primary }};
 }
 
 .navbar-brand {
