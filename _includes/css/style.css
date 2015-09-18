@@ -119,18 +119,12 @@ a:focus {
 	font-weight: 900;
 }
 
-.navbar-brand img {
-	height: 100;
-
-	-webkit-transition: all .4s ease;
-	-moz-transition: all .4s ease;
-	-o-transition: all .4s ease;
-	-ms-transition: all .4s ease;
-	transition: all .4s ease;
+.navbar img {
+	height: 100px;
 }
 
-.navbar-brand.shrink img {
-	height: 50;
+.navbar img {
+	height: 50px;
 }
 
 .navbar-header .navbar-brand {
