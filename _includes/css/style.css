@@ -109,10 +109,11 @@ a:focus {
 }
 
 .navbar.shrink {
-	min-height: 50px;
-	padding-top: 5px;
+	min-height: 30px;
+	padding-top: 0px;
 	margin-bottom: 0px;
 	background-color: {{ site.colors.primary }};
+	border-bottom: 2px solid {{ site.colors.secondary }};
 }
 
 .navbar-brand {
