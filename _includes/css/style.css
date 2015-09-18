@@ -130,6 +130,12 @@ a:focus {
 
 .navbar-brand img {
 	min-height: 100%;
+
+	-webkit-transition: all .4s ease;
+	-moz-transition: all .4s ease;
+	-o-transition: all .4s ease;
+	-ms-transition: all .4s ease;
+	transition: all .4s ease;
 }
 
 .navbar-brand.shrink img {
@@ -414,8 +420,6 @@ a:focus {
 
 #footerwrap small {
 	color: {{ site.colors.footer_content }};
-	align: center;
-	text-align: center;
 }
 
 #footerwrap i {
