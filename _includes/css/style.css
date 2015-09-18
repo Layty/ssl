@@ -130,7 +130,7 @@ a:focus {
 }
 
 .navbar-brand.shrink img {
-	min-height: 50;
+	height: 50;
 }
 
 .navbar-header .navbar-brand {
