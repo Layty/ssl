@@ -137,8 +137,13 @@ a:focus {
 
 .navbar-header .navbar-brand {
 	color: white;
-	border: 0px;
 	height: auto;
+}
+
+.navbar-header.shrink .navbar-brand.shrink {
+	color: white;
+	height: auto;
+	padding: 7px;
 }
 
 .navbar-default .navbar-nav > li > a {
