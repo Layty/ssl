@@ -114,9 +114,11 @@ a:focus {
 	border-bottom: 2px solid {{ site.colors.secondary }};
 }
 
-.xnavbar-brand {
+.navbar-brand {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 900;
+	border: 8px;
+	height: auto;
 }
 
 .navbar img {
@@ -137,13 +139,6 @@ a:focus {
 
 .navbar-header .navbar-brand {
 	color: white;
-	height: auto;
-}
-
-.navbar-header.shrink .navbar-brand.shrink {
-	color: white;
-	height: auto;
-	padding: 7px;
 }
 
 .navbar-default .navbar-nav > li > a {
