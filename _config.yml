@@ -93,6 +93,8 @@ clients:
     img: client03.png
   - name: VimeoPro
     img: client04.png
+  - name: Matrixssl
+    img: client04.png
     
 # Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
 about: "MatrixSSL&trade; is an embedded SSL and TLS implementation designed for small footprint applications and devices."

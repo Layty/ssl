@@ -123,15 +123,16 @@ a:focus {
 	max-width: 100%;
 	height: auto;
 	display: block;
-}
 
-.navbarx.shrink img {
-	height: 50px;
 	-webkit-transition: all .4s ease;
 	-moz-transition: all .4s ease;
 	-o-transition: all .4s ease;
 	-ms-transition: all .4s ease;
 	transition: all .4s ease;
+}
+
+.navbar.shrink img {
+	max-width: 50%;
 }
 
 .navbar-header .navbar-brand {
