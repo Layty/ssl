@@ -99,7 +99,6 @@ a:focus {
 .navbar {
 	min-height: 100px;
 	padding-top: 0px;
-	margin: auto;
 
 	-webkit-transition: all .4s ease;
 	-moz-transition: all .4s ease;
@@ -137,7 +136,7 @@ a:focus {
 
 .navbar-header .navbar-brand {
 	color: white;
-	border: 8px;
+	padding: 8px;
 	height: auto;
 }
 
@@ -145,6 +144,7 @@ a:focus {
 	color: white;
 	font-weight: 700;
 	font-size: 12px;
+	height: 100%;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
