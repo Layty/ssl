@@ -110,15 +110,13 @@ a:focus {
 
 .navbar.shrink {
 	min-height: 50px;
-	background-color: {{ site.colors.primary }};
-	border-bottom: 2px solid {{ site.colors.secondary }};
+/*	background-color: {{ site.colors.primary }}; */
+	border-bottom: 2px solid {{ site.colors.primary }};
 }
 
 .navbar-brand {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 900;
-	border: 8px;
-	height: auto;
 }
 
 .navbar img {
@@ -139,6 +137,8 @@ a:focus {
 
 .navbar-header .navbar-brand {
 	color: white;
+	border: 8px;
+	height: auto;
 }
 
 .navbar-default .navbar-nav > li > a {
