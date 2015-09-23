@@ -1,19 +1,17 @@
 <div id="cwrap">
     <div class="container">
         <div class="row centered">
-			{{ site.static_files }}
 			{% assign i = '0' %}
             {% for sf in site.static_files %}
-				{{ sf }}
-				{% if sf.file.path | remove_first:'assets/img/clients/' != sf.file.path %}
+				{% if sf.path | remove_first:'/assets/img/clients/' != sf.path %}
 				{% if i | modulo:3 == 0 %}
 				{% comment %}startblock{% endcomment %}
 				{% endif %}
                 <div class="col-lg-3 col-md-3 col-sm-3">
 				{% if i > 2 %}
-					<h5>{{ sf.file.path }}</h5>
+					<h5>{{ sf.path }}</h5>
 				{% else %}
-					<h4>{{ sf.file.path }}</h4>
+					<h4>{{ sf.path }}</h4>
 				{% endif %}
                 </div>
 				{% capture i %}{{ i | plus:1 }}{% endcapture %}
