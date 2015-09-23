@@ -1,8 +1,10 @@
 <div id="cwrap">
     <div class="container">
         <div class="row centered">
-			{% assign i = 0 %}
+			{% assign i = "0" %}
             {% for sf in site.static_files %}
+<!-- path {{ sf }} -->
+<% raw %>
 <!-- path {{ sf.path }} -->
 				{% capture cf %}{{ sf.path | remove_first:'/assets/img/clients/' }}{% endcapture %}
 				{% if cf != sf.path %}
@@ -17,6 +19,7 @@
                 </div>
 				{% capture i %}{{ i | plus:1 }}{% endcapture %}
 				{% endif %}
+<% endraw %>
             {% endfor %}
         </div><! --/row -->
     </div><! --/container -->
