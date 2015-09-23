@@ -1,12 +1,13 @@
 <div id="cwrap">
     <div class="container">
         <div class="row centered">
-			{% assign i = '0' %}
+			{% assign i = 0 %}
             {% for sf in site.static_files %}
-				{% if sf.path | remove_first:'/assets/img/clients/' != sf.path %}
-				{% if i | modulo:3 == 0 %}
-				{% comment %}startblock{% endcomment %}
-				{% endif %}
+<!-- path {{ sf.path }} -->
+				{% capture cf %}{{ sf.path | remove_first:'/assets/img/clients/' }}{% endcapture %}
+				{% if cf != sf.path %}
+				{% capture m %}{{ i | modulo:3 }}{% endcapture %}
+<!-- modulo {{ m }} -->
                 <div class="col-lg-3 col-md-3 col-sm-3">
 				{% if i > 2 %}
 					<h5>{{ sf.path }}</h5>
@@ -15,14 +16,8 @@
 				{% endif %}
                 </div>
 				{% capture i %}{{ i | plus:1 }}{% endcapture %}
-				{% if i | modulo:3 == 0 %}
-				{% comment %}endblock{% endcomment %}
-				{% endif %}
 				{% endif %}
             {% endfor %}
-			{% if i | modulo:3 != 0 %}
-			{% comment %}endblock2{% endcomment %}
-			{% endif %}
         </div><! --/row -->
     </div><! --/container -->
 </div><! --/cwrap -->
