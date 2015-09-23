@@ -1,0 +1,30 @@
+<div id="cwrap">
+    <div class="container">
+        <div class="row centered">
+			{% assign i = '0' %}
+            {% for client in site.static_files %}
+				{% if item.file.path | remove_first:'/assets//img/clients/' != item.file.path %}
+
+				{% if i | modulo:3 == 0 %}
+				{% comment %}startblock{% endcomment %}
+				{% endif %}
+                <div class="col-lg-3 col-md-3 col-sm-3">
+				{% if i > 2 %}
+					<h5>{{ item.file.path }}</h5>
+				{% else %}
+					<h4>{{ item.file.path }}</h4>
+				{% endif %}
+                </div>
+				{% capture i %}{{ i | plus:1 }}{% endcapture %}
+				{% if i | modulo:3 == 0 %}
+				{% comment %}endblock{% endcomment %}
+				{% endif %}
+
+				{% endif %}
+            {% endfor %}
+			{% if i | modulo:3 != 0 %}
+			{% comment %}endblock2{% endcomment %}
+			{% endif %}
+        </div><! --/row -->
+    </div><! --/container -->
+</div><! --/cwrap -->

@@ -398,6 +398,13 @@ a:focus {
 	margin-bottom: 60px;
 }
 
+#cwrap img {
+	-webkit-filter: grayscale(1);		/* Older webkit */
+	-webkit-filter: grayscale(100%);	/* Webkit (Chrome, Safari) */
+	filter: gray;						/* IE */
+	filter: grayscale(100%);			/* Standard CSS */
+}
+
 /* Footer */
 #footerwrap {
 	padding-top: 60px;
