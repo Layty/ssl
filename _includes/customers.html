@@ -2,18 +2,18 @@
     <div class="container">
         <div class="row centered">
 			{% assign i = '0' %}
-            {% for item in site.static_files %}
-				<!-- comment -->
-				{% comment %}{{ item.file.path }}{% endcomment %}
-				{% if item.file.path | remove_first:'/assets//img/clients/' != item.file.path %}
+            {% for file in site.static_files %}
+				<!-- comment {{ i }} -->
+				{% comment %}{{ file.path }}{% endcomment %}
+				{% if file.path | remove_first:'/assets//img/clients/' != file.path %}
 				{% if i | modulo:3 == 0 %}
 				{% comment %}startblock{% endcomment %}
 				{% endif %}
                 <div class="col-lg-3 col-md-3 col-sm-3">
 				{% if i > 2 %}
-					<h5>{{ item.file.path }}</h5>
+					<h5>{{ file.path }}</h5>
 				{% else %}
-					<h4>{{ item.file.path }}</h4>
+					<h4>{{ file.path }}</h4>
 				{% endif %}
                 </div>
 				{% capture i %}{{ i | plus:1 }}{% endcapture %}
