@@ -3,6 +3,7 @@
         <div class="row centered">
 			{% assign i = '0' %}
             {% for client in site.static_files %}
+				{% comment %}{{ item.file.path }}{% endcomment %}
 				{% if item.file.path | remove_first:'/assets//img/clients/' != item.file.path %}
 
 				{% if i | modulo:3 == 0 %}
