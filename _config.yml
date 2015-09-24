@@ -15,6 +15,10 @@ markdown: kramdown
 permalink: /:categories/:title
 excerpt_separator: <!--more--> #use this in posts to define how long the excerpt of the post (that is shown on the Blog page) is
 
+# Auto generate a sitemap
+gems:
+  - jekyll-sitemap
+
 colors:  #in hex code if not noted else
   primary: "#456785"
   primary_rgb: "69,102,133" # Needed in some places for the transparency effect.  
