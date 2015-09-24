@@ -3,16 +3,8 @@
         <div class="row centered">
 			{% assign i = 0 %}
             {% for sf in site.static_files %}
-<!-- path {{ sf.path }} -->
-{% capture cf %}{{ sf.path | remove_first:'/assets/img/clients/' }}{% endcapture %}
-<!-- shortpath {{ cf }} -->
-{% if cf != sf.path %}
-<!-- i {{ i }} -->
-{% if i > 2 %}
-<h5>{{ sf.path }}</h5>
-{% else %}
-<h4>{{ sf.path }}</h4>
-{% endif %}
+{% if sf.path contains '/assets/img/clients' %}
+<!-- path {{ i }} {{ sf.path }} -->
 {% capture i %}{{ i | plus:1 }}{% endcapture %}
 {% endif %}
             {% endfor %}
