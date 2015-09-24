@@ -1,10 +1,9 @@
 <div id="cwrap">
     <div class="container">
         <div class="row">
-			<div id="carousel-customer" class="carousel slide" data-ride="carousel" data-interval=1000>
-				<div class="carousel-inner">
+            <div id="carousel-customer" class="carousel slide" data-ride="carousel" data-interval=1000><div class="carousel-inner">
 {% assign i = 0 %}
-{% for sf in site.static_files %}{% if sf.path contains '/assets/img/clients' %}
+{% for sf in site.static_files %}{% if sf.path contains '/assets/img/customers' %}
 	{% assign m = i | modulo:3 %}
 	{% if m == 0 %}
 		{% if i == 0 %}<div class="item active">{% else %}<div class="item">{% endif %}
@@ -15,9 +14,16 @@
 	{% if m == 2 %}</div>{% endif %}
 	{% assign i = i | plus:1 %}
 {% endif %}{% endfor %}
-{% if m != 2 %}</div>{% endif %}
-				</div>
-			</div> <!--/Carousel -->
+{% case m %}
+{% when 0 %}
+	<div class="col-lg-4 col-md-4 col-sm-4"> </div>
+	<div class="col-lg-4 col-md-4 col-sm-4"> </div>
+	</div>
+{% when 1 %}
+	<div class="col-lg-4 col-md-4 col-sm-4"> </div>
+	</div>
+{% endcase %}
+            </div></div> <!--/Carousel -->
         </div><! --/row -->
     </div><! --/container -->
 </div><! --/cwrap -->
