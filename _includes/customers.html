@@ -4,22 +4,6 @@
 			{% assign i = 0 %}
             {% for sf in site.static_files %}
 <!-- path {{ sf }} -->
-<% raw %>
-<!-- path {{ sf.file.path }} -->
-				{% capture cf %}{{ sf.file.path | remove_first:'/assets/img/clients/' }}{% endcapture %}
-				{% if cf != sf.file.path %}
-				{% capture m %}{{ i | modulo:3 }}{% endcapture %}
-<!-- modulo {{ m }} -->
-                <div class="col-lg-3 col-md-3 col-sm-3">
-				{% if i > 2 %}
-					<h5>{{ sf.file.path }}</h5>
-				{% else %}
-					<h4>{{ sf.file.path }}</h4>
-				{% endif %}
-                </div>
-				{% capture i %}{{ i | plus:1 }}{% endcapture %}
-				{% endif %}
-<% endraw %>
             {% endfor %}
         </div><! --/row -->
     </div><! --/container -->
