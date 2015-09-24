@@ -5,6 +5,9 @@
             {% for sf in site.static_files %}
 {% if sf.path contains '/assets/img/clients' %}
 <!-- path {{ i }} {{ sf.path }} -->
+{% if i == 1 %}
+<!-- special i -->
+{% endif %}
 {% capture i %}{{ i | plus:1 }}{% endcapture %}
 {% endif %}
             {% endfor %}
