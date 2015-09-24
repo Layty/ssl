@@ -1,16 +1,30 @@
 <div id="cwrap">
     <div class="container">
         <div class="row centered">
-			<div class="col-lg-8 col-lg-offset-2">
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<div class="carousel-inner">
 {% for sf in site.static_files %}{% if sf.path contains '/assets/img/clients' %}
-		{% increment i %}
-		{% if i > 3 %}
-<!-- first path {{ sf.path }} -->
+	{% increment i %}
+	{% capture m %}{{ i | modulo:3 }}{% endcapture %}
+	{% if m == '1' %}
+		{% if i == 1 %}
+			<div class="item active">
 		{% else %}
-<!-- path {{ sf.path }} -->
+			<div class="item">
 		{% endif %}
+	{% endif %}
+	<img src="{{ sf.path | prepend: site.baseurl }}" alt="" class="img-responsive">
+	{% if m == '0' %}
+		</div>
+	{% endif %}
 {% endif %}{% endfor %}
-        	</div><! --/col -->
+{% if m != '0' %}
+	</div>
+{% endif %}
+</div>
+</div> <!--/Carousel -->
+
         </div><! --/row -->
     </div><! --/container -->
 </div><! --/cwrap -->
