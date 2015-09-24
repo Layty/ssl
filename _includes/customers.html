@@ -1,14 +1,10 @@
 <div id="cwrap">
     <div class="container">
         <div class="row centered">
-			{% assign i = 0 %}
             {% for sf in site.static_files %}
 {% if sf.path contains '/assets/img/clients' %}
 <!-- path {{ i }} {{ sf.path }} -->
-{% if i > 1 %}
-special
-{% endif %}
-{% capture i %}{{ i | plus:1 }}{% endcapture %}
+{% increment i %}
 {% endif %}
             {% endfor %}
         </div><! --/row -->
