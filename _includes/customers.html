@@ -2,16 +2,18 @@
     <div class="container">
         <div class="row">
             <div id="carousel-customer" class="carousel slide" data-ride="carousel" data-interval=1000><div class="carousel-inner">
-{% assign cols = 4 %}{% assign i = 0 %}
+{% assign num_col = 5 %}
+{% assign i = 0 %}
+{% assign max_col = num_col | minus:1 %}
 {% for sf in site.static_files %}{% if sf.path contains '/assets/img/customers' %}
-	{% assign m = i | modulo:cols %}
+	{% assign m = i | modulo:num_col %}
 	{% if m == 0 %}
 		{% if i == 0 %}<div class="item active">{% else %}<div class="item">{% endif %}
 	{% endif %}
-    <div class="col-lg-3 col-md-3 col-sm-3">
+    <div class="col-lg-3 col-md-3 col-sm-3 centered">
         <img src="{{ sf.path | prepend: site.baseurl }}" alt="" class="img-responsive">
     </div>
-	{% if m == 3 %}</div>{% endif %}
+	{% if m == max_col %}</div>{% endif %}
 	{% assign i = i | plus:1 %}
 {% endif %}{% endfor %}
 {% case m %}
