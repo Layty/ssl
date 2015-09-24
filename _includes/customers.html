@@ -1,12 +1,14 @@
 <div id="cwrap">
     <div class="container">
         <div class="row centered">
-            {% for sf in site.static_files %}
-{% if sf.path contains '/assets/img/clients' %}
-<!-- path {{ i }} {{ sf.path }} -->
-{% increment i %}
-{% endif %}
-            {% endfor %}
+{% for sf in site.static_files %}{% if sf.path contains '/assets/img/clients' %}
+		{% if > 2 %}
+<!-- first path {{ sf.path }} -->
+		{% else %}
+<!-- path {{ sf.path }} -->
+		{% endif %}
+		{% increment i %}
+{% endif %}{% endfor %}
         </div><! --/row -->
     </div><! --/container -->
 </div><! --/cwrap -->
