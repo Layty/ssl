@@ -11,7 +11,7 @@
 	<div class="col-lg-3 col-md-3 col-sm-3">
 	<img src="{{ sf.path | prepend: site.baseurl }}" alt="" class="img-responsive">
 	</div>
-	{% if m == 3 %}</div>{% endif %}
+	{% if m == cols | minus:1  %}</div>{% endif %}
 	{% assign i = i | plus:1 %}
 {% endif %}{% endfor %}
 {% case m %}

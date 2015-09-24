@@ -403,8 +403,8 @@ a:focus {
 	-webkit-filter: grayscale(100%);	/* Webkit (Chrome, Safari) */
 	filter: gray;						/* IE */
 	filter: grayscale(100%);			/* Standard CSS */
-	height:75;
-	max-height:75;
+	height:75px;
+	max-height:75px;
 }
 
 /* Footer */
