@@ -8,6 +8,11 @@
 <!-- shortpath {{ cf }} -->
 {% if cf != sf.path %}
 <!-- i {{ i }} -->
+{% if i > 2 %}
+<h5>{{ sf.path }}</h5>
+{% else %}
+<h4>{{ sf.path }}</h4>
+{% endif %}
 {% capture i %}{{ i | plus:1 }}{% endcapture %}
 {% endif %}
             {% endfor %}
