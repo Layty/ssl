@@ -4,6 +4,8 @@
 			{% assign i = 0 %}
             {% for sf in site.static_files %}
 <!-- path {{ sf.path }} -->
+{% capture cf %}{{ sf.path | remove_first:'/assets/img/clients/' }}{% endcapture %}
+<!-- path {{ cf }} -->
             {% endfor %}
         </div><! --/row -->
     </div><! --/container -->
