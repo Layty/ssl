@@ -1,25 +1,23 @@
 <div id="cwrap">
     <div class="container">
-        <div class="row centered">
-
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-<div class="carousel-inner">
+        <div class="row">
+			<div id="carousel-customer" class="carousel slide" data-ride="carousel" data-interval=1000>
+				<div class="carousel-inner">
 {% assign i = 0 %}
 {% for sf in site.static_files %}{% if sf.path contains '/assets/img/clients' %}
 	{% assign m = i | modulo:3 %}
 	{% if m == 0 %}
 		{% if i == 0 %}<div class="item active">{% else %}<div class="item">{% endif %}
 	{% endif %}
-	<div class="col-lg-3 col-md-3 col-sm-3">
+	<div class="col-lg-4 col-md-4 col-sm-4">
 	<img src="{{ sf.path | prepend: site.baseurl }}" alt="" class="img-responsive">
 	</div>
 	{% if m == 2 %}</div>{% endif %}
 	{% assign i = i | plus:1 %}
 {% endif %}{% endfor %}
 {% if m != 2 %}</div>{% endif %}
-</div>
-</div> <!--/Carousel -->
-
+				</div>
+			</div> <!--/Carousel -->
         </div><! --/row -->
     </div><! --/container -->
 </div><! --/cwrap -->
