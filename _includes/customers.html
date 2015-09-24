@@ -1,14 +1,16 @@
 <div id="cwrap">
     <div class="container">
         <div class="row centered">
+			<div class="col-lg-8 col-lg-offset-2">
 {% for sf in site.static_files %}{% if sf.path contains '/assets/img/clients' %}
-		{% if > 2 %}
+		{% increment i %}
+		{% if i > 3 %}
 <!-- first path {{ sf.path }} -->
 		{% else %}
 <!-- path {{ sf.path }} -->
 		{% endif %}
-		{% increment i %}
 {% endif %}{% endfor %}
+        	</div><! --/col -->
         </div><! --/row -->
     </div><! --/container -->
 </div><! --/cwrap -->
