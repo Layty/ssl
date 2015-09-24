@@ -3,11 +3,15 @@
         <div class="row">
             <div id="carousel-customer" class="carousel slide" data-ride="carousel" data-interval=5000><div class="carousel-inner">
 {% assign num_col = 6 %}{% assign i = 0 %}{% assign max_col = num_col | minus:1 %}{% assign div_col = 12 | divided_by:num_col %}
-{% for sf in site.static_files %}{% if sf.path contains '/assets/img/customers' %}{% assign m = i | modulo:num_col %}{% if m == 0 %}{% if i == 0 %}<div class="item active">{% else %}<div class="item">{% endif %}{% endif %}
+{% for sf in site.static_files %}{% if sf.path contains '/assets/img/customers' %}{% assign m = i | modulo:num_col %}{% if m == 0 %}{% if i == 0 %}
+<div class="item active">{% else %}
+<div class="item">{% endif %}{% endif %}
     <div class="col-lg-{{ div_col }} col-md-{{ div_col }} col-sm-{{ div_col }} centered">
         <img src="{{ sf.path | prepend: site.baseurl }}" alt="" class="img-responsive">
-    </div>{% if m == max_col %}</div>{% endif %}{% assign i = i | plus:1 %}{% endif %}{% endfor %}
-{% if m != max_col %}</div>{% endif %}
+    </div>{% if m == max_col %}
+</div>{% endif %}{% assign i = i | plus:1 %}{% endif %}{% endfor %}
+{% if m != max_col %}
+</div>{% endif %}
             </div></div>
         </div>
     </div>
