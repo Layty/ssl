@@ -407,6 +407,11 @@ a:focus {
 	max-height:75px;
 }
 
+#cwrap .item {
+	height:50px;
+	max-height:50px;
+}
+
 /* Footer */
 #footerwrap {
 	padding-top: 60px;
