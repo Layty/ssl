@@ -113,14 +113,7 @@ a:focus {
 	border-bottom: 2px solid {{ site.colors.primary }};
 }
 
-.navbar-brand {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 900;
-}
-
 .navbar img {
-	max-width: 100%;
-	height: auto;
 	display: block;
 
 	-webkit-transition: all .4s ease;
@@ -132,6 +125,11 @@ a:focus {
 
 .navbar.shrink img {
 	max-height:34px;
+}
+
+.navbar-brand {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 900;
 }
 
 .navbar-header .navbar-brand {
