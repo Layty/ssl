@@ -131,7 +131,8 @@ a:focus {
 }
 
 .navbar.shrink img {
-	max-width: 50%;
+	/* max-width: 50%; */
+	max-height:28px;
 }
 
 .navbar-header .navbar-brand {
