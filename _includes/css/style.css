@@ -115,7 +115,8 @@ a:focus {
 
 .navbar img {
 	display: block;
-	height:84;
+	min-height:84;
+	height:auto;
 
 	-webkit-transition: all .4s ease;
 	-moz-transition: all .4s ease;
@@ -125,7 +126,7 @@ a:focus {
 }
 
 .navbar.shrink img {
-	height:34;
+	min-height:34;
 }
 
 .navbar-brand {
