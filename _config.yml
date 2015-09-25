@@ -18,6 +18,7 @@ excerpt_separator: <!--more--> #use this in posts to define how long the excerpt
 # Auto generate a sitemap
 gems:
   - jekyll-sitemap
+  - jekyll-feed
 
 colors:  #in hex code if not noted else
   primary: "#456785"
