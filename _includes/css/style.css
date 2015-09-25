@@ -124,7 +124,7 @@ a:focus {
 }
 
 .navbar.shrink img {
-	max-height:34px;
+	height:auto;
 }
 
 .navbar-brand {
