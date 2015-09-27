@@ -14,6 +14,13 @@ logo_sm: matrixssl_logo_transparent_md.png
 markdown: kramdown
 permalink: /:categories/:title
 excerpt_separator: <!--more--> #use this in posts to define how long the excerpt of the post (that is shown on the Blog page) is
+exclude:
+  - CNAME
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - jekyll.sh
+  - "*.bak"
 
 # Auto generate a sitemap
 gems:

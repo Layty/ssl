@@ -21,11 +21,12 @@
 
 <script>
 $(window).scroll(function() {
-  if ($(document).scrollTop() > 50) {
+  if ($(document).scrollTop() > 40) {
     $('nav').addClass('shrink');
   } else {
     $('nav').removeClass('shrink');
   }
+  $("div#headerwrap").css("opacity", 1 - ($(window).scrollTop()-200) / 1000);
 });
 </script>
 

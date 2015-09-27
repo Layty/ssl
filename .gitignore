@@ -6,3 +6,5 @@
 *.tmp
 *.orig
 *.DS_Store
+*.lock
+_site/
