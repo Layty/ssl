@@ -29,6 +29,21 @@ permalink: /
     </div><! --/container -->
 </div><! --/service -->
 
+
+<div class="container">
+ <div class="row">
+  <div class="col-lg-6">
+<div class="dl-horizontal">
+{% capture my_include %}{% include tech_summary.md %}{% endcapture %}
+{{ my_include | markdownify }}
+</div>
+  </div>
+  <div class="col-lg-6">
+<img src="assets/img/matrixssl_iot_3.png" class="img-responsive pull-right">
+  </div>
+ </div>
+</div>
+
 {% include header2.html %}
 
 <div class="container mtb">
