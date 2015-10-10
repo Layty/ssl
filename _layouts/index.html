@@ -2,12 +2,6 @@
 layout: default
 ---
 {% include header.html %}
-
-  {{ content }}
-
+{{ content }}
 {% include testimonial.html %}
-
-{% capture my_include %}{% include features.md %}{% endcapture %}
-{{ my_include | markdownify }}
-
 {% include customers.html %}

@@ -3,72 +3,61 @@ layout: index
 title:
 permalink: /
 ---
-
 <div id="service">
-    <div class="container">
-        <div class="row centered">
-            <div class="col-md-4">
-                <i class="fa fa-cloud"></i>
-                <h4>Works on any platform</h4>
-                <p>Included C source code is portable to ANY platform to add network security. PeerSec Core Technology enables full protocol support without filesystem, memory allocation or multi-thread support.</p>
-                <p><br/><a href="#" class="btn btn-theme">More Info</a></p>
-            </div>
-            <div class="col-md-4">
-                <i class="fa fa-lock"></i>
-                <h4>Fully Compatible</h4>
-                <p>With larger implementations and the SSL RFC. All web browsers and servers can communicate securely with MatrixSSL.</p>
-                <p><br/><a href="#" class="btn btn-theme">More Info</a></p>
-            </div>
-            <div class="col-md-4">
-                <i class="fa fa-wrench"></i>
-                <h4>Fully Configurable</h4>
-                <p>Compile in features from 35KB baseline with client or server and a single cipher to full specification support at under 100KB.</p>
-                <p><br/><a href="#" class="btn btn-theme">More Info</a></p>
-            </div>
-        </div>
-    </div><! --/container -->
-</div><! --/service -->
-
-
-<div class="container">
- <div class="row">
-  <div class="col-lg-6">
-<div class="dl-horizontal">
-{% capture my_include %}{% include tech_summary.md %}{% endcapture %}
-{{ my_include | markdownify }}
-</div>
-  </div>
-  <div class="col-lg-6">
-<img src="assets/img/matrixssl_iot_3.png" class="img-responsive pull-right">
+ <div class="container">
+  <div class="row centered">
+   <div class="col-md-4">
+    <i class="fa fa-cloud"></i>
+    <h4>Works on any platform</h4>
+    <p>Included C source code is portable to ANY platform to add network security. PeerSec Core Technology enables full protocol support without filesystem, memory allocation or multi-thread support.</p>
+    <p><br/><a href="#" class="btn btn-theme">More Info</a></p>
+   </div>
+   <div class="col-md-4">
+    <i class="fa fa-lock"></i>
+    <h4>Fully Compatible</h4>
+    <p>With larger implementations and the SSL RFC. All web browsers and servers can communicate securely with MatrixSSL.</p>
+    <p><br/><a href="#" class="btn btn-theme">More Info</a></p>
+   </div>
+   <div class="col-md-4">
+    <i class="fa fa-wrench"></i>
+    <h4>Fully Configurable</h4>
+    <p>Compile in features from 35KB baseline with client or server and a single cipher to full specification support at under 100KB.</p>
+    <p><br/><a href="#" class="btn btn-theme">More Info</a></p>
+   </div>
   </div>
  </div>
 </div>
 
+<div class="container">
+ <div class="row">
+  <div class="col-lg-6 col-lg-offset-1">
+   <div class="dl-horizontal">
+{% capture my_include %}{% include tech_summary.md %}{% endcapture %}{{ my_include | markdownify }}
+   </div>
+  </div>
+  <div class="col-lg-5">
+   <img src="{{ "/assets/img/secure_iot.jpg" | prepend: site.baseurl }}" class="img-responsive pull-right">
+  </div>
+ </div>
+</div>
 {% include header2.html %}
-
+{% capture my_include %}{% include features.md %}{% endcapture %}{{ my_include | markdownify }}
 <div class="container mtb">
-    <div class="row">
-        <div class="col-lg-4 col-lg-offset-1">
-            <h4>More About MatrixSSL.</h4>
-            <p>{{ site.about }}</p>
-            <p><br/><a href="{{ "/about/" | prepend: site.baseurl }}" class="btn btn-theme">More Info</a></p>
-        </div>
-
-        <div class="col-lg-3">
-            <h4>Frequently Asked</h4>
-            <div class="hline"></div>
-            {% for post in site.categories['question'] %} 
-                <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
-            {% endfor %}
-        </div>
-
-        <div class="col-lg-3">
-            <h4>Latest Posts</h4>
-            <div class="hline"></div>
-            {% for post in site.categories['blog'] limit:5 %} 
-                <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}.</a></p>
-            {% endfor %} 
-        </div>
-
-    </div><! --/row -->
-</div><! --/container -->
+ <div class="row">
+  <div class="col-lg-4 col-lg-offset-1">
+   <h4>More About MatrixSSL.</h4>
+   <p>{{ site.about }}</p>
+   <p><br/><a href="{{ "/about/" | prepend: site.baseurl }}" class="btn btn-theme">More Info</a></p>
+  </div>
+  <div class="col-lg-3">
+   <h4>Frequently Asked</h4>
+   <div class="hline"></div>
+{% for post in site.categories['question'] %}    <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>{% endfor %}
+  </div>
+  <div class="col-lg-3">
+   <h4>Latest Posts</h4>
+   <div class="hline"></div>
+{% for post in site.categories['blog'] limit:5 %}    <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>{% endfor %} 
+  </div>
+ </div>
+</div>
