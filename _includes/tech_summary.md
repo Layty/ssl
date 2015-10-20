@@ -2,9 +2,10 @@ Background
 : MatrixSSL, first released in 2004, provides secure connectivity to devices with a small memory footprint. It has evolved to also serve networking devices requiring top performance. MatrixSSL is a lean and efficient C source code SDK that is easy to integrate, and where bugs have few places to hide. 
 : With no known security issue, an extensive implementation of TLS protocol, MatrixSSL is the SDK to look at to replace RSA/BSAFE or OpenSSL. 
 : 
+:
 
-MatrixSSL family:
-: - MatrixSSL with FIPS140-2 certified crypto (NIST cerificate 2389)
+MatrixSSL family
+: - MatrixSSL with FIPS140-2 certified crypto (NIST certificate 2389)
  - MatrixDTLS: A complete and compact DTLS source code implementation.
  - MatrixSSL Interceptor: A friendly way to monitor SSL/TLS traffic in real time without modifying the traffic (passive mode).
  - MatrixSSL for network processors: MatrixSSL delivers high performance on TILE-Gx, CAVIUM Octeon or Intel QuickAssist.
