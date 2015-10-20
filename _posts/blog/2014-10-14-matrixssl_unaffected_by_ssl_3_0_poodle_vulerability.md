@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "MatrixSSL Unaffected by SSL 3.0 POODLE Vulerability"
+title: "MatrixSSL Unaffected by SSL 3.0 POODLE Vulnerability"
 date: 2014-10-14 10:00:00
 author: Admin
 categories:
