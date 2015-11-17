@@ -1,5 +1,5 @@
 MatrixSSL family  
-: - MatrixSSL with FIPS140-2 certified crypto (cert #2389)
+: - MatrixSSL/DTLS with FIPS140-2 certified crypto (cert #2389)
  - MatrixDTLS: A complete and compact DTLS source code toolkit
  - MatrixSSL Interceptor: A friendly way to monitor SSL/TLS in real time without modifying the traffic (passive mode)
  - MatrixSSL for network processors: High performance on TILE-Gx, CAVIUM Octeon or Intel QuickAssist
