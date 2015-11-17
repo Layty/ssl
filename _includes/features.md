@@ -1,6 +1,8 @@
 ## Features
-+ < 50KB total footprint with crypto provider
-+ SSL 3.0 and TLS 1.0, 1.1 and 1.2 server and client support
++ < 50KB total footprint with crypto provider and certificates
++ < 10KB total footprint with PSK only (Tiny version)*
++ TLS 1.0, 1.1 and 1.2 server and client support (SSL 3.0 optional)
++ DTLS 1.0 and 1.2 server and client support*
 + Included crypto library - RSA, ECC, AES, 3DES, ARC4, SHA1, SHA256, MD5
 + Assembly language optimizations for Intel, ARM and MIPS
 + Session re-keying and cipher renegotiation
@@ -22,3 +24,13 @@
 + Example client and server code included
 + Clean, heavily commented code in portable C
 + User and developer documentation
++ SSH command line support*
++ CMS and PKCS#10 support*
++ FIPS140-2 certification using SafeZone FIPS cryptographic module integration (cert #2389)*
++ OpenSSL Crypto integration* providing high performance on certain platforms 
++ OpenSSL APIs wrapper to ease transition from OpenSSL
+
+Please contact us about the features marked with an *
+
+
+
