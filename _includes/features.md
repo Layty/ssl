@@ -1,5 +1,5 @@
-## Features
-+ < 50KB total footprint with crypto provider and certificates
+Features
+: + < 50KB total footprint with crypto provider and certificates
 + < 10KB total footprint with PSK only (Tiny version)*
 + TLS 1.0, 1.1 and 1.2 server and client support (SSL 3.0 optional)
 + DTLS 1.0 and 1.2 server and client support*

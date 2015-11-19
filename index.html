@@ -1,6 +1,6 @@
 ---
 layout: index
-title:
+title: Home
 permalink: /
 ---
 <div id="service">
@@ -25,32 +25,30 @@ permalink: /
  </div>
 </div>
 
+<div id="siot">
 <div class="container">
  <div class="row">
-  <div class="col-lg-6 col-lg-offset-1">
-   <div class="dl-horizontal">
-{% capture my_include %}{% include tech_summary.md %}{% endcapture %}{{ my_include | markdownify }}
-   </div>
-   <p><br/><a href="{{ "/about/" | prepend: site.baseurl }}" class="btn btn-theme">More Info</a></p>
-  </div>
-  <div class="col-lg-5">
-   <img src="{{ "/assets/img/secure_iot.jpg" | prepend: site.baseurl }}" class="img-responsive pull-right">
-  </div>
- </div>
-</div>
-<div class="container">
- <div class="row">
-  <div class="col-lg-6 col-lg-offset-1">
+  <div class="col-lg-6">
    <div class="dl-horizontal">
 {% capture my_include %}{% include features.md %}{% endcapture %}{{ my_include | markdownify }}
    </div>
    <p><br/><a href="{{ "/about/" | prepend: site.baseurl }}" class="btn btn-theme">More Info</a></p>
   </div>
-  <div class="col-lg-5">
-   <img src="{{ "/assets/img/secure_iot.jpg" | prepend: site.baseurl }}" class="img-responsive pull-right">
+ </div>
+</div>
+</div>
+
+<div class="container">
+ <div class="row">
+  <div class="col-lg-6">
+   <div class="dl-horizontal">
+{% capture my_include %}{% include matrixssl_family.md %}{% endcapture %}{{ my_include | markdownify }}
+   </div>
+   <p><br/><a href="{{ "/about/" | prepend: site.baseurl }}" class="btn btn-theme">More Info</a></p>
   </div>
  </div>
 </div>
+
 <div class="container mtb">
  <div class="row">
   <div class="col-lg-5 col-lg-offset-1">
