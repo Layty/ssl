@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # @see https://help.github.com/articles/using-jekyll-with-pages/
 # sudo gem install bundler
 # echo "source 'https://rubygems.org'" > Gemfile
