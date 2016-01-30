@@ -1,4 +1,4 @@
----
+--
 layout: post
 title: "BEAST Attack on SSL"
 date: 2011-10-07 10:00:00
@@ -9,7 +9,7 @@ categories:
 image:
 thumb:
 ---
-	In Sept. 2011 security researchers demonstrated how a previously known CBC encryption weakness could be used to decrypt HTTP data over SSL. The attack was named BEAST (Browser Exploit Against SSL/TLS).  As with previous man-in-the-middle SSL vulnerabilities, the attack is generally considered a very low risk for individual browsers as it requires the attacker to have control over the network.  Additionally, in this specific exploit they will also have to have a mechanism to elicit known HTTPS responses from the client. Most MatrixSSL users do not fall into the category of vulnerable uses.
+In Sept. 2011 security researchers demonstrated how a previously known CBC encryption weakness could be used to decrypt HTTP data over SSL. The attack was named BEAST (Browser Exploit Against SSL/TLS).  As with previous man-in-the-middle SSL vulnerabilities, the attack is generally considered a very low risk for individual browsers as it requires the attacker to have control over the network.  Additionally, in this specific exploit they will also have to have a mechanism to elicit known HTTPS responses from the client. Most MatrixSSL users do not fall into the category of vulnerable uses.
 <p/>
 <b>Solutions</b>
 <ol>

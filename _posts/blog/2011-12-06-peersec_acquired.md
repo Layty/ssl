@@ -9,7 +9,7 @@ categories:
 image:
 thumb:
 ---
-	<b>AuthenTec Acquires PeerSec Networks to Strengthen Leadership in Embedded Security</b>
+<b>AuthenTec Acquires PeerSec Networks to Strengthen Leadership in Embedded Security</b>
 <p/>
 <i>Combination of AuthenTec QuickSec&reg; and PeerSec Matrix&trade; Product Lines 
 Creates Comprehensive Embedded Secure Networking Portfolio</i>
