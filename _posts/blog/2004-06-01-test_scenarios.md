@@ -58,7 +58,7 @@ thumb:
 <b>Longevity Testing</b>
 <ul>
 <li>Overnight testing using OpenSSL s_time SSL tests on Linux and Windows.</li>
-<li>All tests run under <a href="http://valgrind.kde.org/" target=_new>Valgrind</a> to detect memory leaks and overruns</li>
+<li>All tests run under <a href="http://valgrind.kde.org/" target='_new'>Valgrind</a> to detect memory leaks and overruns</li>
 <li>Verification of zero memory growth during longevity testing</li>
 <li>Used the following for longevity testing:<br /><span style="font-size:small;font-family:courier">openssl s_time -connect 'ip':4433 -www / -time 'seconds' -cipher 'cipher' -ssl3</span></li>
 </ul>

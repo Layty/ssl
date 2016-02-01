@@ -9,7 +9,7 @@ categories:
 image:
 thumb:
 ---
-We've built MatrixSSL for the <a href="http://www.linksys.com/products/product.asp?grid=33&scid=35&prid=601" target=_new>Linksys WRT54G</a> wireless router.  This is a linux based router that has open firmware available directly from the manufacturer.  Here are the specs:
+We've built MatrixSSL for the <a href="http://www.linksys.com/products/product.asp?grid=33&scid=35&prid=601" target='_new'>Linksys WRT54G</a> wireless router.  This is a linux based router that has open firmware available directly from the manufacturer.  Here are the specs:
 <ul>
 <li>uClinux 2.4.20 kernel</li>
 <li>200Mhz MIPS32 processor</li>
