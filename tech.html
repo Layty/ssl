@@ -7,16 +7,77 @@ permalink: /tech/
 <div class="container mtb">
     <div class="row">
         <div class="col-lg-6">
-            <img class="img-responsive" src="{{ "/assets/img/about.jpg" | prepend: site.baseurl }}" alt="">
+{% capture my_md%}
+Algorithm|Key Size|Ok?|Typical Risks
+-|
+RSA|< 1024|No|Weak. Below MIN_RSA_SIZE connections will be refused.
+RSA|1024|No|In wide usage. Recommended to not use going forward
+RSA|\> 1024|Yes|Recommend at least 2048 bit keys.
+DH|< 1024|No|Weak. Below `MIN_DH_SIZE` connections will be refused.
+DH|1024|No|In wide usage. Recommended to not use going forward
+DH|\> 1024|Yes|Recommend at least 2048 bit DH group.
+DHE|\> 1024|Yes|See chart below. Ephemeral cipher suites provide perfect forward secrecy, and are generally the strongest available, although they are also the slowest performing for key exchange.
+ECDHE|\>= 192|Yes|See chart below. Ephemeral cipher suites provide perfect forward secrecy, and are generally the strongest available, although they are also the slowest performing for key exchange.
+ECDH|\>= 192|Yes|192 bit DH group and above is currently assumed secure. Smaller groups are not supported in MatrixSSL. Below `MIN_ECC_SIZE` connections will be refused.
+PSK|\>= 128|Yes|Pre-shared Key ciphers rely on offline key agreement. They avoid any weaknesses of Key Exchange Algorithms, however, it is not easy to change keys once they are installed when used as session keys. When PSK is used only for authentication (`DHE_PSK` and `ECDHE_PSK` cipher suites), the session encryption keys are generated each connection.
+
+>**C=US, O=GeoTrust Inc., CN=GeoTrust Global CA**
+*Issuer*: C=US, O=Equifax, OU=Equifax Secure Certificate Authority [Valid, matches a loaded trusted root subject]
+*Authority KeyId*: 48:E6:68:F9:2B:D2:B2:95... [Valid, matches the Issuer Subject KeyId]
+*Subject KeyId*: C0:7A:98:68:8D:89:FB:AB...
+*Basic Constraints*: critical CA:TRUE [Valid, this certificate can sign others]
+*Key Usage*: critical Certificate Sign, CRL Sign [Valid, able to sign certificates]
+*Validity*: (May 21 04:00:00 2002 GMT to Aug 21 04:00:00 2018 GMT) [Valid]
+>>**C=US, O=Google Inc, CN=Google Internet Authority G2**
+*Issuer*: C=US, O=GeoTrust Inc., CN=GeoTrust Global CA [Valid, matches parent subject]
+*Authority KeyId*: C0:7A:98:68:8D:89:FB:AB... [Valid, matches the Issuer Subject KeyId]
+*Subject KeyId*: 4A:DD:06:16:1B:BC:F6:68...
+*Validity*: (Apr  5 15:15:55 2013 GMT to Apr  4 15:15:55 2015 GMT) [Valid]
+*Basic Constraints*: critical CA:TRUE, pathlen:0 [Valid, this certificate can sign others and the signed certificate is not also a CA]
+*Key Usage*: critical Certificate Sign, CRL Sign [Valid, able to sign certificates]
+*Version*: 3 [Valid]
+>>**C=US, ST=California, L=Mountain View, O=Google Inc, CN=*.google.com**
+*Issuer*: C=US, O=Google Inc, CN=Google Internet Authority G2 [Valid, matches parent subject]
+*X509v3 Basic Constraints*: critical CA:FALSE [Valid, this is a leaf cert]
+*Extended Key Usage*: TLS Web Server Authentication, TLS Web Client Authentication [Valid]
+*X509v3 Subject Alternative Name*: DNS:*.google.com, DNS:*.android.com... [Valid, matches expected DNS name]
+*Validity*: (Mar 12 09:53:40 2014 GMT to Jun 10 00:00:00 2014 GMT) [Valid]
+
+word
+: definition
+
+word 2
+: definition 2
+
+{% endcapture %}{{ my_md | markdownify }}
+
+{% highlight c tabsize=0 %}
+tlsExtension_t * extension;
+	unsigned char   *alpn[MAX_PROTO_EXT];
+int32_t         alpnLen[MAX_PROTO_EXT];
+
+matrixSslNewHelloExtension(&extension);
+
+alpn[0] = psMalloc(NULL, strlen("http/1.0"));
+memcpy(alpn[0], "http/1.0", strlen("http/1.0"));
+alpnLen[0] = strlen("http/1.0");
+alpn[1] = psMalloc(NULL, strlen("http/1.1"));
+memcpy(alpn[1], "http/1.1", strlen("http/1.1"));
+alpnLen[1] = strlen("http/1.1");
+
+matrixSslCreateALPNext(NULL, 2, alpn, alpnLen, &ext, &extLen);
+matrixSslLoadHelloExtension(extension, ext, extLen, EXT_ALPN);
+
+psFree(alpn[0]);
+psFree(alpn[1]);
+
+matrixSslNewClientSession(&ssl, keys, sid, g_cipher, g_ciphers, certCb, g_ip, extension, extensionCb, &options);
+
+matrixSslDeleteHelloExtension(extension);
+{% endhighlight %}
+
         </div>
         <div class="col-lg-6">
-            <h4>MatrixSSL, a product of INSIDE Secure.</h4>
-            <p>Originally developed by PeerSec in 2004, MatrixSSL is now a product of INSIDE secure.</p>
-            <p>MatrixSSL provides secure connectivity to devices with a small memory footprint. It has evolved to also serve networking devices requiring top performance. MatrixSSL is a lean and efficient C source code SDK that is easy to integrate, and where bugs have few places to hide. With no known security issue, an extensive implementation of TLS and DTLS protocol, MatrixSSL is the SDK to look at to replace RSA/BSAFE or OpenSSL.</p>
-            <p></p>
-            <p>INSIDE Secure's mission is to drive security innovation to meet demands of new Mobile and “Internet of Everything” age by designing, developing and selling embedded security systems in order to protect transactions, content, and communication.</p>
-            
-            <p><br/><a href="/contact/" class="btn btn-theme">Contact Us</a></p>
         </div>
     </div><! --/row -->
 </div><! --/container -->
