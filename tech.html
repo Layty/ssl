@@ -1,55 +1,72 @@
 ---
-layout: tech
+layout: page
 title: Tech
+wrap_title: <i class="fa fa-space-shuttle"></i>
 permalink: /tech/
 ---
 
 <div class="container mtb">
     <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-12">
 {% capture my_md%}
-Algorithm|Key Size|Ok?|Typical Risks
--|
-RSA|< 1024|No|Weak. Below MIN_RSA_SIZE connections will be refused.
-RSA|1024|No|In wide usage. Recommended to not use going forward
-RSA|\> 1024|Yes|Recommend at least 2048 bit keys.
-DH|< 1024|No|Weak. Below `MIN_DH_SIZE` connections will be refused.
-DH|1024|No|In wide usage. Recommended to not use going forward
-DH|\> 1024|Yes|Recommend at least 2048 bit DH group.
-DHE|\> 1024|Yes|See chart below. Ephemeral cipher suites provide perfect forward secrecy, and are generally the strongest available, although they are also the slowest performing for key exchange.
-ECDHE|\>= 192|Yes|See chart below. Ephemeral cipher suites provide perfect forward secrecy, and are generally the strongest available, although they are also the slowest performing for key exchange.
-ECDH|\>= 192|Yes|192 bit DH group and above is currently assumed secure. Smaller groups are not supported in MatrixSSL. Below `MIN_ECC_SIZE` connections will be refused.
-PSK|\>= 128|Yes|Pre-shared Key ciphers rely on offline key agreement. They avoid any weaknesses of Key Exchange Algorithms, however, it is not easy to change keys once they are installed when used as session keys. When PSK is used only for authentication (`DHE_PSK` and `ECDHE_PSK` cipher suites), the session encryption keys are generated each connection.
-
->**C=US, O=GeoTrust Inc., CN=GeoTrust Global CA**
-*Issuer*: C=US, O=Equifax, OU=Equifax Secure Certificate Authority [Valid, matches a loaded trusted root subject]
-*Authority KeyId*: 48:E6:68:F9:2B:D2:B2:95... [Valid, matches the Issuer Subject KeyId]
-*Subject KeyId*: C0:7A:98:68:8D:89:FB:AB...
-*Basic Constraints*: critical CA:TRUE [Valid, this certificate can sign others]
-*Key Usage*: critical Certificate Sign, CRL Sign [Valid, able to sign certificates]
-*Validity*: (May 21 04:00:00 2002 GMT to Aug 21 04:00:00 2018 GMT) [Valid]
->>**C=US, O=Google Inc, CN=Google Internet Authority G2**
-*Issuer*: C=US, O=GeoTrust Inc., CN=GeoTrust Global CA [Valid, matches parent subject]
-*Authority KeyId*: C0:7A:98:68:8D:89:FB:AB... [Valid, matches the Issuer Subject KeyId]
-*Subject KeyId*: 4A:DD:06:16:1B:BC:F6:68...
-*Validity*: (Apr  5 15:15:55 2013 GMT to Apr  4 15:15:55 2015 GMT) [Valid]
-*Basic Constraints*: critical CA:TRUE, pathlen:0 [Valid, this certificate can sign others and the signed certificate is not also a CA]
-*Key Usage*: critical Certificate Sign, CRL Sign [Valid, able to sign certificates]
-*Version*: 3 [Valid]
->>**C=US, ST=California, L=Mountain View, O=Google Inc, CN=*.google.com**
-*Issuer*: C=US, O=Google Inc, CN=Google Internet Authority G2 [Valid, matches parent subject]
-*X509v3 Basic Constraints*: critical CA:FALSE [Valid, this is a leaf cert]
-*Extended Key Usage*: TLS Web Server Authentication, TLS Web Client Authentication [Valid]
-*X509v3 Subject Alternative Name*: DNS:*.google.com, DNS:*.android.com... [Valid, matches expected DNS name]
-*Validity*: (Mar 12 09:53:40 2014 GMT to Jun 10 00:00:00 2014 GMT) [Valid]
-
-word
-: definition
-
-word 2
-: definition 2
-
 {% endcapture %}{{ my_md | markdownify }}
+<pre>
+TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256
+TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256
+TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
+TLS_DHE_RSA_WITH_AES_128_CBC_SHA256
+TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+TLS_DHE_RSA_WITH_AES_256_CBC_SHA
+TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+TLS_DHE_RSA_WITH_AES_128_CBC_SHA
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_DHE_PSK_WITH_AES_256_CBC_SHA
+TLS_DHE_PSK_WITH_AES_128_CBC_SHA
+TLS_RSA_WITH_AES_256_GCM_SHA384
+TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384
+TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384
+TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384
+TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384
+TLS_RSA_WITH_AES_256_CBC_SHA256
+TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256
+TLS_RSA_WITH_AES_128_GCM_SHA256
+TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256
+TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256
+TLS_RSA_WITH_AES_128_CBC_SHA256
+TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256
+TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA
+TLS_RSA_WITH_AES_256_CBC_SHA
+TLS_ECDH_RSA_WITH_AES_256_CBC_SHA
+TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA
+TLS_ECDH_RSA_WITH_AES_128_CBC_SHA
+SSL_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_PSK_WITH_AES_256_CBC_SHA384
+TLS_PSK_WITH_AES_128_CBC_SHA256
+TLS_PSK_WITH_AES_256_CBC_SHA
+TLS_PSK_WITH_AES_128_CBC_SHA
+SSL_RSA_WITH_RC4_128_SHA
+TLS_RSA_WITH_SEED_CBC_SHA
+TLS_RSA_WITH_IDEA_CBC_SHA
+SSL_RSA_WITH_RC4_128_MD5
+SSL_RSA_WITH_NULL_SHA
+SSL_RSA_WITH_NULL_MD5
+TLS_DH_anon_WITH_AES_256_CBC_SHA
+TLS_DH_anon_WITH_AES_128_CBC_SHA
+SSL_DH_anon_WITH_3DES_EDE_CBC_SHA
+SSL_DH_anon_WITH_RC4_128_MD5
+</pre>
 
 {% highlight c tabsize=0 %}
 tlsExtension_t * extension;

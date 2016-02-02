@@ -1,0 +1,20 @@
+---
+layout: page
+title: Documentation
+wrap_title: <i class="fa fa-book"></i>
+permalink: /doc/
+---
+<div class="container mtb">
+ <div class="row">
+  <div class="col-lg-5 col-lg-offset-1">
+   <h4>Frequently Asked</h4>
+   <div class="hline"></div>
+{% for post in site.categories['question'] limit:3 %}    <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>{% endfor %}
+  </div>
+  <div class="col-lg-5">
+   <h4>Latest Posts</h4>
+   <div class="hline"></div>
+{% for post in site.categories['blog'] limit:3 %}    <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>{% endfor %}
+  </div>
+ </div>
+</div>

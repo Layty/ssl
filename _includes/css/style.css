@@ -70,6 +70,35 @@ a:focus {
   color:{{ site.colors.link_hover }};
 }
 
+/* Table style */
+table {
+	margin-bottom: 20px;
+}
+
+table th,table td {
+	padding: 8px;
+	line-height: 20px;
+	vertical-align: top;
+	border-top: 1px solid #dddddd;
+}
+
+table th {
+	font-weight: bold;
+}
+
+table thead th {
+	vertical-align: bottom;
+}
+
+table caption+thead tr:first-child th,table caption+thead tr:first-child td,table colgroup+thead tr:first-child th,table colgroup+thead tr:first-child td,table thead:first-child tr:first-child th,table thead:first-child tr:first-child td
+	{
+	border-top: 0;
+}
+
+table tbody+tbody {
+	border-top: 2px solid #dddddd;
+}
+
 ::-moz-selection  {
 	color: #fff;
 	text-shadow:none;
@@ -276,13 +305,12 @@ a:focus {
 	margin: 0 auto;
 }
 
-/* Services Wrap */
-#service {
+#overview {
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
 
-#service i {
+#overview i {
 	color: {{ site.colors.primary }};
 	font-size: 60px;
 	padding: 15px;
@@ -352,9 +380,10 @@ a:focus {
     position: relative;
     margin-top: 0px;
 	padding-top:60px;
+	padding-bottom:60px;
 	background-attachment: relative;
-	background-position: center center;
-	min-height: 450px;
+	background-position: bottom center;
+	min-height: 300px;
 	width: 100%;
 	
     -webkit-background-size: 100%;
@@ -368,17 +397,28 @@ a:focus {
     background-size: cover;
 }
 
+/* Extensions to font-awesome */
+.fa-bg {
+	color: {{ site.colors.primary }};
+}
+
+.fa-pad {
+	margin: 8px;
+}
+
+
+/*
 #twrap i {
 	font-size: 50px;
 	color: white;
 	margin-bottom: 25px;
 }
-
 #twrap p {
 	color: white;
 	font-size: 15px;
 	line-height: 30px;
 }
+*/
 
 /* clients logo */
 #cwrap {
@@ -411,7 +451,7 @@ a:focus {
     margin-top: 0px;
 	padding-top:60px;
 	background-attachment: relative;
-	background-position: center center;
+	background-position: top center;
 	min-height: 450px;
 	width: 100%;
 	
@@ -424,7 +464,6 @@ a:focus {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
 }
 
 /* Footer */
@@ -464,9 +503,8 @@ a:focus {
 #blue {
 	background: {{ site.colors.primary }};
 	margin-top: 76px;
-	margin-bottom: 60px;
-	padding-top: 60px;
-	padding-bottom: 25px;
+	padding-top: 50px;
+	padding-bottom: 16px;
 }
 
 #blue h3 {
@@ -514,6 +552,13 @@ csmall {
 
 .badge-theme {
 	background: {{ site.colors.primary }};
+}
+
+#firewrap {
+	background: url(../img/inside_fire.png) no-repeat center top;
+	background-attachment: relative;
+	background-position: bottom right;
+	width: 100%;
 }
 
 /* Contact Page */

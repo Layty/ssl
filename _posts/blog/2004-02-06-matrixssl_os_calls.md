@@ -10,7 +10,8 @@ image:
 thumb:
 ---
 The following operating system calls are used within MatrixSSL.  Justification and alternatives for each set of calls is given.
-<table id="grid">
+
+<table class="table">
 <tr><th>Memory&nbsp;Allocation</th><th></th>
 <tr><td>
 malloc()<br />
