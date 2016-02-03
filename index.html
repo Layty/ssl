@@ -6,17 +6,17 @@ permalink: /
  <div class="container">
  <div class="spacing"></div>
   <div class="row centered">
-   <div class="col-md-4">
+   <div class="col-sm-4">
     <i class="fa fa-leaf fa-5x"></i>
     <h4>Low memory footprint</h4>
     <p>MatrixSSL stack is a modular source code SDK ideally suited for IoT usage due to its low memory footprint (<50KB, even down to 10kB for MatrixSSL Tiny) and efficient RAM utilization (4KB per connection, even less than 1kB for MatrixSSL Tiny). It even runs on platforms without filesystem, memory allocation or multi-threading.</p>
    </div>
-   <div class="col-md-4">
+   <div class="col-sm-4">
     <i class="fa fa-lock fa-5x"></i>
     <h4>Proven security</h4>
     <p>MatrixSSL has no known security weaknesses, and has not been affected by recent vulnerabilities found in other implementations such as OpenSSL. In last 10 years, MatrixSSL had no major security weakness listed in the U.S. government repository of standards based vulnerability.</p>
    </div>
-   <div class="col-md-4">
+   <div class="col-sm-4">
     <i class="fa fa-rocket fa-5x"></i>
     <h4>High performance</h4>
     <p>Due to its compact design, MatrixSSL is more memory and CPU e­fficient than competing solutions, including those based on OpenSSL. With true multi-threading, zero-copy processing and an asynchronous API for hardware integration, MatrixSSL is ideal for securing cloud access.</p>
@@ -27,12 +27,12 @@ permalink: /
 <div id="firewrap">
 <div class="container">
  <div class="row">
-  <div class="col-lg-5 col-lg-offset-1">
+  <div class="col-md-5 col-md-offset-1">
 <h4>Features</h4>
 <div class="hline"></div>
 {% capture my_include %}{% include features.md %}{% endcapture %}{{ my_include | markdownify }}
   </div>
-  <div class="col-lg-5">
+  <div class="col-md-5">
 <h4>Implementation</h4>
 <div class="hline"></div>
 {% capture my_include %}{% include implementation.md %}{% endcapture %}{{ my_include | markdownify }}
@@ -46,68 +46,67 @@ permalink: /
 <div id="twrapback"></div>
 <div class="container">
  <div class="row">
-  <div class="col-lg-3 col-lg-offset-1">
+  <div class="col-md-8 col-md-offset-2 centered">
+   <h2>Product Family</h2>
+  </div>
+ </div>
+ <div class="row">
+  <div class="col-md-3 col-md-offset-1">
 <h4>
 <span class="fa-stack fa-lg fa-pad">
   <i class="fa fa-certificate fa-stack-2x"></i>
   <i class="fa fa-lock fa-stack-1x fa-bg"></i>
 </span>
-MatrixSSL FIPS</h4>
-MatrixSSL integrated with SafeZone FIPS140-2 certified crypto. <a href="http://csrc.nist.gov/groups/STM/cmvp/documents/140-1/1401val2015.htm#2389" target='_new'>Certificate #2389</a>
+MatrixSSL&nbsp;FIPS</h4>
+MatrixSSL integrated with SafeZone FIPS140-2 certified crypto. <a href="http://csrc.nist.gov/groups/STM/cmvp/documents/140-1/1401val2015.htm#2389" target='_new'>Certificate #2389</a>. Fully supported solution for small footprint devices needing to comply with US Government FIPS security standards.
   </div>
-  <div class="col-lg-3 col-lg-offset-1">
+  <div class="col-md-3 col-md-offset-1">
 <h4>
 <span class="fa-stack fa-lg fa-pad">
   <i class="fa fa-cloud fa-stack-2x"></i>
   <i class="fa fa-bolt fa-stack-1x fa-bg"></i>
 </span>
-MatrixSSL for Network Processors</h4>
-High performance on TILE-Gx, CAVIUM Octeon or Intel QuickAssist
+MatrixSSL&nbsp;Accelerator</h4>
+High performance on TILE-Gx, CAVIUM Octeon or Intel QuickAssist hardware crypto. Full support for asynchronous crypto and single-pass hardware record processing. Compatible with <a href="http://www.insidesecure.com/Products-Technologies/Silicon-IP/Security-Protocol-Packet-Engines">INSIDE Secure Packet Engine hardware IP</a>
   </div>
-  <div class="col-lg-3">
+  <div class="col-md-3">
 <h4>
 <span class="fa-stack fa-lg fa-pad">
-  <i class="fa fa-cloud fa-stack-2x"></i>
-  <i class="fa fa-lightbulb-o fa-stack-1x fa-bg"></i>
+  <i class="fa fa-lightbulb-o fa-stack-2x"></i>
+  <i class="fa fa-wifi fa-stack-1x fa-rotate-90" style="padding-bottom:30px;text-align:left;"></i>
 </span>
-MatrixSSL Tiny</h4>
-The world smallest TLS implementation that requires 600 bytes of RAM and 10kB of flash. It is deployed with 8-bit micro-processors.
+MatrixSSL&nbsp;Tiny</h4>
+The world smallest TLS implementation that requires 600 bytes of RAM and 10kB of flash. Ideal for 8-bit and 16 bit microprocessors.
   </div>
  </div>
  <div class="row">
-  <div class="col-lg-3 col-lg-offset-1">
-<h4>
-<span class="fa-stack fa-lg fa-pad">
-  <i class="fa fa-user-secret fa-stack-2x"></i>
-</span>
-MatrixSSL Interceptor</h4>
-Monitor SSL/TLS in real time without modifying traffic (passive mode)
-  </div>
-  <div class="col-lg-3 col-lg-offset-1">
+  <div class="col-md-3 col-md-offset-1">
 <h4>
 <span class="fa-stack fa-lg fa-pad">
   <i class="fa fa-square fa-stack-2x"></i>
   <i class="fa fa-terminal fa-stack-1x fa-bg"></i>
 </span>
 MatrixSSH</h4>
-An SSH server source code toolkit suitable for RTOS environments.
+An SSH server source code toolkit suitable for RTOS environments. Extends traditional insecure command line terminal environments over serial or telnet to the secure SSH standard.
   </div>
-  <div class="col-lg-3">
+  <div class="col-md-3 col-md-offset-1">
 <h4>
 <span class="fa-stack fa-lg fa-pad">
-  <i class="fa fa-envelope-o fa-stack-2x"></i>
-  <i class="fa fa-lock fa-stack-1x"></i>
+  <i class="fa fa-lock fa-stack-2x"></i>
+  <i class="fa fa-envelope-o fa-stack-1x fa-bg" style="padding-top:0.25em;"></i>
 </span>
 MatrixCMS</h4>
-A source code toolkit of the Cryptographic Messaging Syntax (RFC 5652)
+A source code toolkit of the Cryptographic Messaging Syntax <a href="https://tools.ietf.org/html/rfc5652" target='_new'>(RFC 5652)</a> supporting streams based parsing. CMS is the standard to use for packaging signed/encrypted firmware updates or provisioning files in the Smart Meter environment.
+  </div>
+  <div class="col-md-3">
+<h4>
+<span class="fa-stack fa-lg fa-pad">
+  <i class="fa fa-user-secret fa-stack-2x"></i>
+</span>
+MatrixSSL&nbsp;Interceptor</h4>
+Monitor SSL/TLS in real time without modifying traffic (passive mode). Operates in conjunction with TLS terminating proxy for active mode protocol monitoring.
   </div>
  </div>
-<!--
-  <div class="col-lg-8 col-lg-offset-2">
-{% capture my_include %}{% include matrixssl_family.md %}{% endcapture %}{{ my_include | markdownify }}
-   <p><a href="{{ "/contact/" | prepend: site.baseurl }}" class="btn btn-theme">More Info</a></p>
-  </div>
--->
  </div>
 </div>
 </div>
