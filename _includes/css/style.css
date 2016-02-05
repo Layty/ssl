@@ -70,6 +70,10 @@ a:focus {
   color:{{ site.colors.link_hover }};
 }
 
+dd {
+	padding-left: 1em;
+}
+
 /* Table style */
 table {
 	margin-bottom: 20px;

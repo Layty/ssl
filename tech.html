@@ -1,15 +1,25 @@
 ---
 layout: page
 title: Tech
-wrap_title: <i class="fa fa-space-shuttle"></i>
+wrap_title: <i class="fa fa-wrench"></i>
 permalink: /tech/
 ---
 
 <div class="container mtb">
     <div class="row">
         <div class="col-lg-12">
-{% capture my_md%}
-{% endcapture %}{{ my_md | markdownify }}
+
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#rfcs" aria-controls="rfcs" role="tab" data-toggle="tab">RFCs</a></li>
+    <li role="presentation"><a href="#ciphers" aria-controls="ciphers" role="tab" data-toggle="tab">Ciphers</a></li>
+    <li role="presentation"><a href="#code" aria-controls="code" role="tab" data-toggle="tab">Code</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="rfcs">
+{% capture my_include %}{% include rfc.md %}{% endcapture %}{{ my_include | markdownify }}
+    </div>
+    <div role="tabpanel" class="tab-pane" id="ciphers">
 <pre>
 TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
 TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
@@ -67,7 +77,8 @@ TLS_DH_anon_WITH_AES_128_CBC_SHA
 SSL_DH_anon_WITH_3DES_EDE_CBC_SHA
 SSL_DH_anon_WITH_RC4_128_MD5
 </pre>
-
+    </div>
+    <div role="tabpanel" class="tab-pane" id="code">
 {% highlight c tabsize=0 %}
 tlsExtension_t * extension;
 	unsigned char   *alpn[MAX_PROTO_EXT];
@@ -92,6 +103,10 @@ matrixSslNewClientSession(&ssl, keys, sid, g_cipher, g_ciphers, certCb, g_ip, ex
 
 matrixSslDeleteHelloExtension(extension);
 {% endhighlight %}
+    </div>
+  </div>
+
+
 
         </div>
         <div class="col-lg-6">
