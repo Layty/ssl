@@ -11,5 +11,5 @@ thumb:
 ---
 
 *Is the SSL/TLS Protocol Broken?*
-: [Register for INSIDE's webinar](http://www.insidesecure.com/Webinar-Registration) to learn about the current state of the protocol, gain an understanding of the recent TLS attacks, and learn what you can do to protect your enterprise.
+: [Register for INSIDE's webinar](http://www.insidesecure.com/internet-of-things-recorded-emea-webinar-registration) to learn about the current state of the protocol, gain an understanding of the recent TLS attacks, and learn what you can do to protect your enterprise.
 
