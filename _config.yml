@@ -5,7 +5,7 @@ title: MatrixSSL
 description: "MatrixSSL is an open embedded SSL and TLS implementation designed for small footprint applications and devices to allow secure management of remote devices running FreeRTOS, VxWorks, eCos, pSos, embedded Linux and other embedded operating systems."
 analytics: "UA-251332-5"
 baseurl: "" #important: start with /
-url: "https://matrixssl.github.io"
+url: "http://www.matrixssl.org"
 copyright: "Copyright (c) INSIDE Secure Corp., 2002-2016.  All Rights Reserved."
 logo: matrixssl_logo_transparent_md.png
 logo_sm: matrixssl_logo_transparent_sm.png
@@ -19,7 +19,7 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
-  - jekyll.sh
+  - "*.sh"
   - "*.bak"
 
 # Auto generate a sitemap
@@ -28,6 +28,10 @@ gems:
   - jekyll-feed
 
 #  - jekyll-seo-tag
+
+# change jekyll-feed default of feed.xml to index.xml
+feed:
+  path: index.xml
 
 colors:  #in hex code if not noted else
   primary: "#456785"
