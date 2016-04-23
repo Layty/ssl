@@ -22,10 +22,11 @@ exclude:
   - "*.sh"
   - "*.bak"
 
-# Auto generate a sitemap
+# Auto generate a sitemap, atom feed and support redirects
 gems:
   - jekyll-sitemap
   - jekyll-feed
+  - jekyll-redirect-from
 
 #  - jekyll-seo-tag
 
