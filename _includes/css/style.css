@@ -1,6 +1,5 @@
 /* @import url(https://fonts.googleapis.com/css?family=Raleway:400,700,900); */
 @import url(https://fonts.googleapis.com/css?family=Lato:400,900);
-/* @import url("prettyPhoto.css") screen; */
 @import url("hoverex-all.css") screen;
 @import url("pygments.css");
 
@@ -661,4 +660,37 @@ a.anchor{
     position: relative; 
     top: -80px; 
     visibility: hidden;
+}
+
+.bs-docs-masthead {
+  padding-top:50px;
+  padding-bottom:40px;
+  margin-bottom:20px;
+}
+
+.bs-docs-header h1, .bs-docs-header p {
+  margin-right:0px;
+}
+
+.bs-docs-sidebar .nav > li > a {
+  font-size:15px;
+}
+.bs-docs-sidebar .nav .nav > li > a {
+  font-size:14px;
+}
+.back-top-top {
+  font-size:13px;
+}
+
+#content {
+  position:relative;
+}
+#content:after {
+  content:"";
+  position:absolute;
+  bottom:0px;
+  right:0px;
+  height:50px;
+  width:30%;
+  background:linear-gradient(135deg, transparent 50px, white 50px);
 }
