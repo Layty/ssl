@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 {% include head.html %}
-  <body>
+ <body>
 {% include nav.html %}
+{% unless page.permalink == "/" %}{% include wrap.html %}{% endunless %}
 {{ content }}
 {% include footer.html %}
 {% include js.html %}
-  </body>
+ </body>
 </html>

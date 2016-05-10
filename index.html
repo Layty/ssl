@@ -1,64 +1,81 @@
 ---
-layout: index
+layout: default
 title: Home
 permalink: /
 redirect_from: "/download.html"
 ---
+<div id="headerwrap">
  <div class="container">
- <div class="spacing"></div>
-  <div class="row centered">
-   <div class="col-sm-4">
-    <i class="fa fa-leaf fa-5x"></i>
-    <h4>Low memory footprint</h4>
-    <p>MatrixSSL stack is a modular source code SDK ideally suited for IoT usage due to its low memory footprint (<50KB, even down to 10kB for MatrixSSL Tiny) and efficient RAM utilization (4KB per connection, even less than 1kB for MatrixSSL Tiny). It even runs on platforms without filesystem, memory allocation or multi-threading.</p>
-   </div>
-   <div class="col-sm-4">
-    <i class="fa fa-lock fa-5x"></i>
-    <h4>Proven security</h4>
-    <p>MatrixSSL has no known security weaknesses, and has not been affected by recent vulnerabilities found in other implementations such as OpenSSL. In last 10 years, MatrixSSL had no major security weakness listed in the U.S. government repository of standards based vulnerability.</p>
-   </div>
-   <div class="col-sm-4">
-    <i class="fa fa-rocket fa-5x"></i>
-    <h4>High performance</h4>
-    <p>Due to its compact design, MatrixSSL is more memory and CPU e­fficient than competing solutions, including those based on OpenSSL. With true multi-threading, zero-copy processing and an asynchronous API for hardware integration, MatrixSSL is ideal for securing cloud access.</p>
+  <div class="row">
+   <div class="col-lg-8 col-lg-offset-2">
+    <h3>Enterprise level security &lt; 50 KB</h3>
+    <h1>Compact Embedded SSL/TLS stack </h1>
    </div>
   </div>
+  <div class="row">
+   <div class="col-lg-12 himg">
+    <img src="{{ "/assets/img/matrixssl_iot_all.png" | prepend: site.baseurl }}" class="img-responsive">
+   </div>
+  </div><!-- /row -->
+ </div> <!-- /container -->
+</div><!-- /headerwrap -->
+
+<div class="container">
+ <div class="spacing"></div>
+ <div class="row centered">
+  <div class="col-sm-4">
+   <i class="fa fa-leaf fa-5x"></i>
+   <h4>Low memory footprint</h4>
+   <p>MatrixSSL stack is a modular source code SDK ideally suited for IoT usage due to its low memory footprint (<50KB, even down to 10kB for MatrixSSL Tiny) and efficient RAM utilization (4KB per connection, even less than 1kB for MatrixSSL Tiny). It even runs on platforms without filesystem, memory allocation or multi-threading.</p>
+  </div>
+  <div class="col-sm-4">
+   <i class="fa fa-lock fa-5x"></i>
+   <h4>Proven security</h4>
+   <p>MatrixSSL has no known security weaknesses, and has not been affected by recent vulnerabilities found in other implementations such as OpenSSL. In last 10 years, MatrixSSL had no major security weakness listed in the U.S. government repository of standards based vulnerability.</p>
+  </div>
+  <div class="col-sm-4">
+   <i class="fa fa-rocket fa-5x"></i>
+   <h4>High performance</h4>
+   <p>Due to its compact design, MatrixSSL is more memory and CPU e­fficient than competing solutions, including those based on OpenSSL. With true multi-threading, zero-copy processing and an asynchronous API for hardware integration, MatrixSSL is ideal for securing cloud access.</p>
+  </div>
  </div>
+</div>
 
 <div id="firewrap">
-<div class="container">
- <div class="row">
-  <div class="col-md-5 col-md-offset-1">
-<h4>Features</h4>
-<div class="hline"></div>
+ <div class="container">
+  <div class="row">
+   <div class="col-md-5 col-md-offset-1">
+    <h4>Features</h4>
+    <div class="hline"></div>
 {% capture my_include %}{% include features.md %}{% endcapture %}{{ my_include | markdownify }}
-  </div>
-  <div class="col-md-5">
-<h4>Implementation</h4>
-<div class="hline"></div>
+   </div>
+   <div class="col-md-5">
+    <h4>Implementation</h4>
+    <div class="hline"></div>
 {% capture my_include %}{% include implementation.md %}{% endcapture %}{{ my_include | markdownify }}
+   </div>
   </div>
+  <div class="spacing"></div>
  </div>
- <div class="spacing"></div>
-</div>
 </div>
 
 <div id="twrap">
-<div id="twrapback"></div>
-<div class="container">
- <div class="row">
-  <div class="col-md-8 col-md-offset-2 centered">
-   <h2>Product Family</h2>
-  </div>
- </div>
- <div class="row">
-  <div class="col-md-3 col-md-offset-1">
-<h4>
-<span class="fa-stack fa-lg fa-pad">
-  <i class="fa fa-certificate fa-stack-2x"></i>
-  <i class="fa fa-lock fa-stack-1x fa-bg"></i>
-</span>
-MatrixSSL&nbsp;FIPS</h4>
+ <div id="twrapback"></div>
+ <div class="container">
+  <div class="row">
+   <div class="col-md-8 col-md-offset-2 centered">
+    <h2>Product Family</h2>
+   </div>
+   </div>
+  <div class="row">
+   <div class="col-md-3 col-md-offset-1">
+    <h4>
+     <span class="fa-stack fa-lg fa-pad">
+     <i class="fa fa-certificate fa-stack-2x"></i>
+     <i class="fa fa-lock fa-stack-1x fa-bg"></i>
+     </span>
+     MatrixSSL&nbsp;FIPS
+    </h4>
 MatrixSSL integrated with SafeZone FIPS140-2 certified crypto. <a href="http://csrc.nist.gov/groups/STM/cmvp/documents/140-1/1401val2015.htm#2389" target='_new'>Certificate #2389</a>. Fully supported solution for small footprint devices needing to comply with US Government FIPS security standards.
   </div>
   <div class="col-md-3 col-md-offset-1">
@@ -110,4 +127,25 @@ Monitor SSL/TLS in real time without modifying traffic (passive mode). Operates 
  </div>
  </div>
 </div>
+</div>
+
+<div id="cwrap">
+ <div class="container">
+  <div class="row">
+   <div id="carousel-customer" class="carousel slide" data-ride="carousel" data-interval=5000>
+    <div class="carousel-inner">
+{% assign num_col = 6 %}{% assign i = 0 %}{% assign max_col = num_col | minus:1 %}{% assign div_col = 12 | divided_by:num_col %}
+{% for sf in site.static_files %}{% if sf.path contains '/assets/img/customers' %}{% assign m = i | modulo:num_col %}{% if m == 0 %}{% if i == 0 %}
+     <div class="item active">{% else %}
+     <div class="item">{% endif %}{% endif %}
+      <div class="col-lg-{{ div_col }} col-md-{{ div_col }} col-sm-{{ div_col }} centered">
+       <img src="{{ sf.path | prepend: site.baseurl }}" alt="" class="img-responsive">
+      </div>{% if m == max_col %}
+     </div>{% endif %}{% assign i = i | plus:1 %}{% endif %}{% endfor %}
+{% if m != max_col %}
+     </div>{% endif %}
+    </div>
+   </div>
+  </div>
+ </div>
 </div>

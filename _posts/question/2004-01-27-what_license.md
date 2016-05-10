@@ -1,5 +1,5 @@
 ---
-layout: question
+layout: post
 title:  "What license is MatrixSSL distributed under?"
 date:   2004-01-27 09:00:00
 author: Admin
