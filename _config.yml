@@ -51,6 +51,8 @@ colors:  #in hex code if not noted else
 social:
   - title: github
     url: https://github.com/matrixssl/matrixssl
+  - title: rss
+    url: http://www.matrixssl.org/index.xml
     
 # Postal address (add as many lines as necessary). Shown in footer and on Contact page.
 address:
