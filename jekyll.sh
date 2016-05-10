@@ -9,4 +9,7 @@
 #       xcode-select --install
 #		sudo chown -R $(whoami):admin /usr/local
 #       gem uninstall jekyll;gem install jekyll
+# @note updating:
+#		bundle update
+#		[sudo] gem update jekyll
 bundle exec jekyll serve
