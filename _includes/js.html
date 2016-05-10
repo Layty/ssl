@@ -1,32 +1,29 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="{{ "/assets/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "/assets/js/retina-1.1.0.js" | prepend: site.baseurl }}"></script>
-<script src="{{ "/assets/js/jquery.hoverdir.js" | prepend: site.baseurl }}"></script>
-<script src="{{ "/assets/js/jquery.hoverex.min.js" | prepend: site.baseurl }}"></script>
-<!-- <script src="{{ "/assets/js/jquery.prettyPhoto.js" | prepend: site.baseurl }}"></script> -->
-<script src="{{ "/assets/js/jquery.isotope.min.js" | prepend: site.baseurl }}"></script>
+{% if page.path contains "docs/" %}
 <script src="{{site.github.url}}/assets/js/docs.min.js"></script>
 <script src="{{site.github.url}}/assets/js/prism.js"></script>
-{% if site.analytics %}<script>
+{% endif %}{% if site.analytics %}
+<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
   ga('create', '{{ site.analytics }}', 'auto');
   ga('send', 'pageview');
 </script>
-<!-- Start of Async HubSpot Analytics Code -->
-  <script type="text/javascript">
-    (function(d,s,i,r) {
-      if (d.getElementById(i)){return;}
-      var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
-      n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/327778.js';
-      e.parentNode.insertBefore(n, e);
-    })(document,"script","hs-analytics",300000);
-  </script>
-<!-- End of Async HubSpot Analytics Code -->
-<script>{% endif %}
+<script type="text/javascript">
+  (function(d,s,i,r) {
+    if (d.getElementById(i)){return;}
+    var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+    n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/327778.js';
+    e.parentNode.insertBefore(n, e);
+  })(document,"script","hs-analytics",300000);
+</script>
+{% endif %}
+<script>
 $(window).scroll(function() {
   if ($(document).scrollTop() > 30) {
     $('nav').addClass('shrink');
