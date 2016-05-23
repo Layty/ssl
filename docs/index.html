@@ -8,15 +8,17 @@ redirect_from: "/docs.html"
 <div class="container mtb">
  <div class="row">
   <div class="col-lg-5 col-lg-offset-1">
-   <h4>Online Documentation</h4>
+   <h4>Online HTML Documentation</h4>
    <div class="hline"></div>{% for sf in site.pages %}{% if sf.path contains 'docs/' and sf.path contains '.md' %}
-    <p><a href="{{ site.baseurl }}/docs/{{ sf.path | remove: 'docs/' | remove: '.md' }}.html">{{ sf.title }}</a></p>{% endif %}{% endfor %}
-  </div>
-
-  <div class="col-lg-5">
-   <h4>Frequently Asked</h4>
-   <div class="hline"></div>{% for post in site.categories['question'] limit:3 %}
+    <p><a href="{{ site.baseurl }}/docs/{{ sf.name | remove: '.md' }}.html">{{ sf.title }}</a></p>{% endif %}{% endfor %}
+   <h4>FAQ</h4>
+   <div class="hline"></div>{% for post in site.categories['question'] %}
     <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>{% endfor %}
+  </div>
+  <div class="col-lg-5">
+   <h4>PDF Documentation</h4>
+   <div class="hline"></div>{% for sf in site.static_files %}{% if sf.path contains '/docs/' and sf.path contains '.pdf' %}
+    <p><a href="{{ site.baseurl }}{{ sf.path }}">{{ sf.path | remove: '/docs/' }}</a></p>{% endif %}{% endfor %}
   </div>
  </div>
 </div>
