@@ -7,10 +7,11 @@
 + RFC7301 Application Protocol Negotiation
 + Server and client X.509 certificate chain authentication
 + Parsing of X.509 .pem and ASN.1 DER certificate formats
-+ PKCS#1.5, PKCS#5, PKCS#8 and PKCS#12 support for key formatting
++ PKCS#1.5, PKCS#5, PKCS#8 and PKCS#12 key formatting
 + RSASSA-PSS Signature Algorithm support
-+ Online Certificate Status Protocol (OCSP) and Certificate Revocation List (CRL) support
++ Online Certificate Status Protocol (OCSP)
++ Certificate Revocation List (CRL)
 + CMS and PKCS#10 support
-+ SSH command line support
-+ FIPS140-2 certification using SafeZone FIPS cryptographic module integration (cert #2389)
++ SSH command line support (commercial option)
++ FIPS140-2 validated SafeZone cryptographic module (commercial option)
 + OpenSSL APIs wrapper to ease transition from OpenSSL
