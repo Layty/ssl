@@ -13,5 +13,5 @@
 + Certificate Revocation List (CRL)
 + CMS and PKCS#10 support
 + SSH command line support (commercial option)
-+ FIPS140-2 validated SafeZone cryptographic module (commercial option)
++ FIPS140-2 validated SafeZone crypto (commercial option)
 + OpenSSL APIs wrapper to ease transition from OpenSSL
