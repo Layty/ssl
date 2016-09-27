@@ -101,14 +101,14 @@
 [RFC 7627](https://tools.ietf.org/html/rfc7627) Transport Layer Security (TLS) Session Hash and Extended Master Secret Extension
 : Supported
 
-[draft-ietf-dice-profile-17](https://datatracker.ietf.org/doc/draft-ietf-dice-profile/) TLS/DTLS Profiles for the Internet of Things
+[RFC 7925](https://tools.ietf.org/html/rfc7925) TLS/DTLS Profiles for the Internet of Things
 : Supported via compile time configuration.
 
-[draft-ietf-tls-chacha20-poly1305](https://datatracker.ietf.org/doc/draft-ietf-tls-chacha20-poly1305/) ChaCha20-Poly1305 Cipher Suites for Transport Layer Security (TLS)
+[RFC 7905](https://tools.ietf.org/html/rfc7905) ChaCha20-Poly1305 Cipher Suites for Transport Layer Security (TLS)
 : Supported:
 : `TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256`
 : `TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256`
 
-[draft-ietf-tls-falsestart](https://datatracker.ietf.org/doc/draft-ietf-tls-falsestart/) Transport Layer Security (TLS) False Start
+[RFC 7918](https://tools.ietf.org/html/rfc7918) Transport Layer Security (TLS) False Start
 : Supported. Disabled by default due to security concerns.
 
