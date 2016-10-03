@@ -12,7 +12,8 @@
 + Online Certificate Status Protocol (OCSP)
 + Certificate Revocation List (CRL)
 + OpenSSL APIs wrapper to ease transition from OpenSSL
-+ Cryptographic Messaging Syntax (CMS) and PKCS#10 support (commercial license)
-+ X.509 Certificate generator(commercial license)
++ Cryptographic Messaging Syntax (CMS): for packaging signed/encrypted firmware updates or provisioning files in Smart Meters (commercial license)
++ PKCS#10 support (commercial license)
++ X.509 Certificate generator (commercial license)
 + FIPS140-2 validated SafeZone crypto (requires a license for SafeZone FIPS Security SDK)
 
