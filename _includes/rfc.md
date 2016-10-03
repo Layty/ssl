@@ -63,7 +63,7 @@
 : `TLS_PSK_WITH_AES_128_CBC_SHA256`
 
 [RFC 5652](https://tools.ietf.org/html/rfc5652) Cryptographic Message Syntax (CMS)
-: Supported with commercial license:
+: Supported with commercial license.
 
 [RFC 5746](https://tools.ietf.org/html/rfc5746) Transport Layer Security (TLS) Renegotiation Indication Extension
 : Supported. Extension required by compile time default.
