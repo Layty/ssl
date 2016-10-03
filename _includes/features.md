@@ -4,14 +4,15 @@
 + Session re-keying and cipher renegotiation
 + Session resumption/caching, Stateless Session Tickets
 + Extensions: Server Name Indication, max fragment length, trusted CA keys, truncated HMAC, Status Request (OCSP)
-+ RFC7301 Application Protocol Negotiation
++ Application Protocol Negotiation
 + Server and client X.509 certificate chain authentication
 + Parsing of X.509 .pem and ASN.1 DER certificate formats
 + PKCS#1.5, PKCS#5, PKCS#8 and PKCS#12 key formatting
 + RSASSA-PSS Signature Algorithm support
 + Online Certificate Status Protocol (OCSP)
 + Certificate Revocation List (CRL)
-+ CMS and PKCS#10 support
-+ SSH command line support (commercial option)
-+ FIPS140-2 validated SafeZone crypto (commercial option)
 + OpenSSL APIs wrapper to ease transition from OpenSSL
++ Cryptographic Messaging Syntax (CMS) and PKCS#10 support (commercial license)
++ X.509 Certificate generator(commercial license)
++ FIPS140-2 validated SafeZone crypto (requires a license for SafeZone FIPS Security SDK)
+
