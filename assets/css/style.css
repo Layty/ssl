@@ -17,7 +17,7 @@ body {
 	background: #ffffff; 
 	margin: 0; 
 	height: 100%; 
-	color: {{ site.colors.secondary }};
+	color: {{ site.colors.secondary }};
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 	}
@@ -35,7 +35,7 @@ p {
 	font-weight: 400;
 	font-size: 14px; 
 	line-height: 24px;
-	color: {{ site.colors.secondary }}; 
+	color: {{ site.colors.secondary }}; 
 	margin-top: 10px; 
 }
 
@@ -165,7 +165,7 @@ table tbody+tbody {
 @media (max-width: 767px) {
 	.navbar {
 		min-height: 50px;
-		border-bottom: 2px solid {{ site.colors.primary }};
+		border-bottom: 2px solid {{ site.colors.primary }};
 	}
 	.navbar img {
 		max-width: 35%;
@@ -175,7 +175,7 @@ table tbody+tbody {
 @media (min-width: 768px) {
 	.navbar {
 		min-height: 100px;
-		border-bottom: 2px solid {{ site.colors.secondary }};
+		border-bottom: 2px solid {{ site.colors.secondary }};
 	}
 	.navbar img {
 		max-width: 100%;
@@ -185,7 +185,7 @@ table tbody+tbody {
 /* Adding or removing the shrink class via javascript will resize it */
 .navbar.shrink {
 	min-height: 50px;
-	border-bottom: 2px solid {{ site.colors.primary }};
+	border-bottom: 2px solid {{ site.colors.primary }};
 }
 
 .navbar.shrink img {
@@ -214,21 +214,21 @@ table tbody+tbody {
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-	color: {{ site.colors.primary }};
+	color: {{ site.colors.primary }};
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-	color: {{ site.colors.primary }};
+	color: {{ site.colors.primary }};
 	background-color: transparent;
 }
 
 .navbar-default {
-	background-color: {{ site.colors.secondary }};
+	background-color: {{ site.colors.secondary }};
 	border-color: transparent;
 }
 
 .dropdown-menu {
-	background: {{ site.colors.secondary }};
+	background: {{ site.colors.secondary }};
 }
 
 .dropdown-menu > li > a {
@@ -239,8 +239,8 @@ table tbody+tbody {
 
 .btn-theme {
   color: #fff;
-  background-color: {{ site.colors.secondary }};
-  border-color: {{ site.colors.secondary }};
+  background-color: {{ site.colors.secondary }};
+  border-color: {{ site.colors.secondary }};
   margin: 4px;
 }
 .btn-theme:hover,
@@ -249,8 +249,8 @@ table tbody+tbody {
 .btn-theme.active,
 .open .dropdown-toggle.btn-theme {
   color: #fff;
-  background-color: {{ site.colors.primary }};
-  border-color: {{ site.colors.primary }};
+  background-color: {{ site.colors.primary }};
+  border-color: {{ site.colors.primary }};
 }
 
 .dmbutton:hover,
@@ -300,7 +300,7 @@ table tbody+tbody {
 }
 
 .hline {
-	border-bottom: 2px solid {{ site.colors.secondary }};
+	border-bottom: 2px solid {{ site.colors.secondary }};
 }
 
 .hline-w {
@@ -312,7 +312,7 @@ table tbody+tbody {
 ################################################################# */
 
 #headerwrap {
-	background-color: {{ site.colors.primary }};
+	background-color: {{ site.colors.primary }};
 	min-height: 0px;
 	padding-top: 130px;
 	padding-bottom: 50px;
@@ -334,12 +334,12 @@ table tbody+tbody {
 }
 
 #header2wrap {
-	background-color: {{ site.colors.secondary }};
+	background-color: {{ site.colors.secondary }};
 	min-height: 0px;
 	padding-top: 0px;
 	padding-bottom: 0px;
 	text-align: center;
-	color: {{ site.colors.primary}}; 
+	color: {{ site.colors.primary}}; 
 }
 
 #header2wrap .img-responsive {
@@ -352,7 +352,7 @@ table tbody+tbody {
 }
 
 #overview i {
-	color: {{ site.colors.primary }};
+	color: {{ site.colors.primary }};
 	font-size: 60px;
 	padding: 15px;
 }
@@ -400,14 +400,14 @@ table tbody+tbody {
 {
 	height:100%;
 	width:100%;
-	background-color:{{ site.colors.primary }};
+	background-color:{{ site.colors.primary }};
 	background-color:rgba({{ site.colors.primary_rgb }},.9);
 	text-align:center;
 }
 
 /* Testimonials Wrap */
 #twrapback {
-    background-color: {{ site.colors.primary }};
+    background-color: {{ site.colors.primary }};
     background-color:rgba({{ site.colors.primary_rgb }},.5);
     position: absolute;
     top: 0;
@@ -440,7 +440,7 @@ table tbody+tbody {
 
 /* Extensions to font-awesome */
 .fa-bg {
-	color: {{ site.colors.primary }};
+	color: {{ site.colors.primary }};
 }
 
 .fa-pad {
@@ -511,7 +511,7 @@ table tbody+tbody {
 #footerwrap {
 	padding-top: 60px;
 	padding-bottom: 60px;
-	background: {{ site.colors.secondary }};
+	background: {{ site.colors.secondary }};
 }
 
 #footerwrap p {
@@ -533,7 +533,7 @@ table tbody+tbody {
 }
 
 #footerwrap i:hover {
-	color: {{ site.colors.primary }}
+	color: {{ site.colors.primary }}
 }
 
 /*	################################################################
@@ -542,7 +542,7 @@ table tbody+tbody {
 /* Sub-pages */
 
 #blue {
-	background: {{ site.colors.primary }};
+	background: {{ site.colors.primary }};
 	margin-top: 76px;
 	padding-top: 50px;
 	padding-bottom: 16px;
@@ -577,7 +577,7 @@ table tbody+tbody {
 }
 
 .ctitle {
-	color: {{ site.colors.primary }};
+	color: {{ site.colors.primary }};
 	font-weight: 700;
 	margin-bottom: 15px;
 }
@@ -593,7 +593,7 @@ csmall {
 }
 
 .badge-theme {
-	background: {{ site.colors.primary }};
+	background: {{ site.colors.primary }};
 }
 
 
