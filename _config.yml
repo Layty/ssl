@@ -6,7 +6,7 @@ description: "MatrixSSL is an open embedded SSL and TLS implementation designed 
 analytics: "UA-251332-5"
 baseurl: "" #important: start with /
 url: "http://www.matrixssl.org"
-copyright: "Copyright (c) INSIDE Secure Corp., 2002-2016.  All Rights Reserved."
+copyright: "Copyright (c) INSIDE Secure Corp., 2002-2017.  All Rights Reserved."
 logo: matrixssl_logo_transparent_md.png
 logo_sm: matrixssl_logo_transparent_sm.png
 
